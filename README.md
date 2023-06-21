@@ -5,7 +5,9 @@ A new Flutter project.
 ## Getting Started
 
 This project is a starting point for a Flutter application.
+
 It's project will use python as back-end and connect with dio package
+
 if are having error be sure that backend is online
 
 A few resources to get you started if this is your first Flutter project:
