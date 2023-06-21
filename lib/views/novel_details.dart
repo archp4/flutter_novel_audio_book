@@ -23,6 +23,7 @@ class NovelDetailView extends StatefulWidget {
 class _NovelDetailViewState extends State<NovelDetailView> {
   bool isLoaded = false;
   NovelDetail? novelDetail;
+  List<Chapter>? initList;
   List<Chapter>? chapterList;
   bool isDescending = false;
   bool showAll = false;
@@ -31,6 +32,7 @@ class _NovelDetailViewState extends State<NovelDetailView> {
     novelDetail = await DioHome.requestNovelDetail(url: widget.novelURL);
     if (!novelDetail.isNull) {
       chapterList = novelDetail!.chapterList.reversed.toList();
+      initList = chapterList;
       setState(() => isLoaded = true);
     }
   }
@@ -40,6 +42,15 @@ class _NovelDetailViewState extends State<NovelDetailView> {
       return chapterList!.length;
     }
     return 10;
+  }
+
+  getIndex(int index) {
+    if (isDescending) {
+      print(initList!.length - index);
+      return initList!.length - index - 1;
+    }
+    print(index);
+    return index;
   }
 
   @override
@@ -88,9 +99,20 @@ class _NovelDetailViewState extends State<NovelDetailView> {
                     shrinkWrap: true,
                     itemCount: showAll ? chapterList!.length : getLength(),
                     itemBuilder: (ctx, index) {
-                      return ChapterTile(
-                        chapterList: chapterList!,
-                        selectIndex: index,
+                      return GestureDetector(
+                        onTap: () {
+                          PageNavigation.to(
+                            context,
+                            ReaderChapterView(
+                              chapterList: initList!,
+                              selectIndex: getIndex(index),
+                            ),
+                          );
+                        },
+                        child: ChapterTile(
+                          chapter: chapterList![index],
+                          index: index,
+                        ),
                       );
                     },
                   ),
@@ -170,41 +192,30 @@ class NovelDetailCard extends StatelessWidget {
 }
 
 class ChapterTile extends StatelessWidget {
-  final List<Chapter> chapterList;
-  final int selectIndex;
+  final Chapter chapter;
+  final int index;
   const ChapterTile({
     Key? key,
-    required this.chapterList,
-    required this.selectIndex,
+    required this.chapter,
+    required this.index,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        PageNavigation.to(
-          context,
-          ReaderChapterView(chapterList: chapterList, selectIndex: selectIndex),
-        );
-      },
-      child: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-        decoration: BoxDecoration(
-          border: Border.all(
-            color: Colors.grey,
-            width: 1,
-            style: BorderStyle.solid,
-          ),
-          borderRadius: BorderRadius.circular(25),
+    return Container(
+      margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+      decoration: BoxDecoration(
+        border: Border.all(
+          color: Colors.grey,
+          width: 1,
+          style: BorderStyle.solid,
         ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(chapterList[selectIndex].name),
-            const Icon(Icons.arrow_right)
-          ],
-        ),
+        borderRadius: BorderRadius.circular(25),
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [Text(chapter.name), const Icon(Icons.arrow_right)],
       ),
     );
   }
