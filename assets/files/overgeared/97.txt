@@ -1,0 +1,268 @@
+‘Then first…’
+
+ 
+
+[Legendary Blacksmith’s Craftsmanship Skill] 
+
+Lv. 2 (76.3%)
+
+Produce equipment items that you know how to make.
+
+You can create the production methods for a new item with the ‘Legendary Blacksmith’s Creation’ skill.
+
+There is a certain probability of producing rare~ epic rated items.
+
+There is a rare probability of creating unique rated items.
+
+There is a very rare probability of creating legendary rated items.
+
+* All stats of a production item will increase by 12%.
+
+* When rare rated items are produced, all stats will permanently rise by +2 and reputation throughout the continent will rise by +30.
+
+* When epic rated items are produced, all stats will permanently rise by +4 and reputation throughout the continent will rise by +80.
+
+* When unique rated items are produced, all stats will permanently rise by +12 and reputation throughout the continent will rise by +300.
+
+* When legendary rated items are produced, all stats will permanently rise by +25 and reputation throughout the continent will rise by +1,000.
+
+* Something special will occur with every five legendary items created. (Currently 2/5)
+
+ 
+
+[Legendary Blacksmith’s Breath] 
+
+Lv. 2 (42.5%)
+
+When you are concentrating on making an item, the will of Pagma’s Descendant will fill the production item.
+
+All stats of a production item will increase by 7%.
+
+There is a rare chance of giving special features to your production items. 
+
+ 
+
+My production skills increased from level 1 to 2 a short time after the item production game with Euphemina. For the last two months, I had made countless normal, rare and epic items. In addition, there were two legendary items.
+
+Nevertheless, my skill levels stagnated at level 2.
+
+‘The experience is a lot worse compared to level 1…’
+
+However, the experience of the Legendary Blacksmith’s Craftsmanship Skill was close to 80%. If I kept making items in earnest, it would reach level 3. 
+
+‘The problem is the Legendary Blacksmith’s Breath. The breath is random, so it is hard to raise the experience.’
+
+I did my best every time I made an item. In particular, it took a long time since I spent more than 20 hours producing one item.
+
+According to the description of the Legendary Blacksmith’s Breath, it should activate every time I made an item. But the concept of ‘concentration’ seemed more difficult than I thought, and the Legendary Blacksmith’s Breath was only activated occasionally.
+
+The breath wasn’t triggered even when I made the legendary Divine Shield. Therefore, the legendary Divine Shield didn’t have any additional options and was exactly as described in the production method.
+
+‘I made a legendary item but the breath skill wasn’t activated… When thinking about it now, it is a shock. On the other hand, there was the Sword of Self-transcendence.’
+
+A sword made through an ordinary longsword production method became a legendary rating, and this could be attributed to the breath skill. Phoenix had described it as a sword that appeared once every 100 years.
+
+‘The key to my production is whether the breath skill is triggered.’
+
+The most important factor for a typical blacksmith was the item’s rating.
+
+Normal, rare, epic and unique.
+
+They made their item, hoping that the rating would be the highest. It was the same for me. Normal, rare, epic and unique. In addition, there was the legendary rating! I only eagerly hoped that a highly rated item would be produced. But now my thoughts had changed. 
+
+While the rating was important, t
+
+he breath also played a critical role.
+
+‘If the breath isn’t triggered, I will produce only the options mentioned in the production method, just like regular blacksmiths. However, when the breath is triggered, the value is much higher, because of the additional options.’
+
+Depending on which options were given, a rare item affected by the breath skill might be better than an epic item not affected by the breath skill. Of course, the breath skill didn’t necessarily give new options. It was random. But even if an option wasn’t granted, the basic abilities were increased, so it was still a profit.
+
+‘Maybe it is necessary for the level of the breath skill to increase in order for it to be triggered more often…’
+
+As long as breath couldn’t be used intentionally, there was no way to quickly raise the level. I just had to raise it while making items.
+
+‘It means I need to continue grinding in the future… It isn’t easy to become rich.’
+
+As I was looking at my blacksmith skills, Vantner came over to me.
+
+“If you don’t mind, can you repair my weapon? It has been badly damaged against Malacus.”
+
+“If you give me money…”
+
+I had never experiencing repairing an item with my own hands before. I only devoted myself to making items. However, the durability of some of my equipment had decreased from recent combat. There was no reason to refuse when Vantner asked me to repair his equipment.
+
+“Khan, do you have any repair tools?”
+
+“Of course.”
+
+Khan brought out an anvil, hammer, grindstone, and iron. However, the anvil and hammer had ‘repair’ attached to the name. It was the first time I saw the repair tools. I asked Khan a question.
+
+“Is there a reason to distinguish these tools for repair? Can’t an ordinary anvil and hammer be used for repairs?”
+
+Khan explained.
+
+“Repair hammers and anvils are disposable. As you said, we can repair items with ordinary anvils and hammers but… We can’t do that. Then won’t it be difficult to ask a lot of repair money from the customer?”
+
+“…?”
+
+“Why do we use disposable hammers and anvils? It is to give customers the awareness that ‘hammers and anvils must be consumed’ when repairing. It is a type of gesture to emphasize the favor we are doing them. Due to this advertisement, we can charge higher repair fees… This is a money-making means devised by the ancient blacksmiths. Thus, the repair tools were born.”
+
+This was the reason why I had to pay an expensive amount of money for my items to be repaired? I had a lot of respect for blacksmiths.
+
+‘It is very desirable to explore new ways to make money… I should learn from this.’
+
+Vantner handed me his two axes.
+
+ 
+
+[Twin Bloody Axes]
+
+Rating: Unique
+
+Durability: 39/500   Attack Power: 250
+
+Critical Chance: +20%   Critical Damage: +30%
+
+* There is a constant probability of attacking two times.
+
+* Can cause bleeding when a critical hit occurs.
+
+It is the weapon of the butcher of Kirim Peninsula, Fang. The number of people killed by this axe is immeasurable.
+
+User Restriction: Level 200 or higher. More than 1,000 strength. Advanced Axe Mastery level 1 or higher. 
+
+Weight: 700 
+
+ 
+
+Vantner said that he invested all his stats into strength, so this was the right weapon for him. 
+
+‘But it is strange.’
+
+The average attack power of axe type weapons was higher than that of one-handed swords. In particular, twin axes had an attack power similar to large weapons. However, the Twin Bloody Axes was weaker in attack power than the usage conditions and rating.
+
+“Mister Vantner. Isn’t the attack power of this axe lower than other twin axes of the same rating?”
+
+Vantner nodded.
+
+“You can tell. That’s right. When I compared to twin axes with similar conditions of use, the attack power is 60 points lower. I’m only using this because I like the options but unfortunately… Fang’s raid was really hard… Frankly, Fang’s weapon is more like a lie. I almost suspect that it is a bug. Hey, I am the same age as Pon. Why are you calling Pon ‘Pon’ and me ‘Mister?’ Huh? Are you kidding?”
+
+This was…
+
+“Appraisal.”
+
+I ignored the suddenly angry person and tried using the Legendary Blacksmith’s Appraisal skill on the Twin Bloody Axes. Then…
+
+ 
+
+[The blacksmith who becomes a legend can appraise items with an excellent discerning eye. If a hidden feature exists in the target item, it will be found.]
+
+ 
+
+Ttiring~
+
+ 
+
+[Genuine Twin Bloody Axes]
+
+Rating: Unique
+
+Durability: 39/500   Attack Power: 250~380
+
+Critical Chance: +20%   Critical Damage: +30%
+
+* There is a constant probability of attacking two times.
+
+* Can cause bleeding when a critical hit occurs.
+
+* Causes confusion when a critical strike is activated.
+
+* The skill ‘Genuine Conversion’ will be generated.
+
+It is the weapon of the butcher of Kirim Peninsula, Fang. The number of people killed by this axe is immeasurable.
+
+The joint part of the left-hand axe is offset. As a result, it isn’t easy to transmit force and the power of the axe isn’t exercised properly.
+
+But this is an intentional device designed to change the power (weight) of the axe from time to time in order to confuse the enemy. Clicking the button hidden below the join will cause the seams to engage and increase the attack power.
+
+It is a weapon where you can feel the pleasure of disturbing and confusing the enemy.
+
+User Restriction: Level 200 or higher. More than 1,000 strength. Advanced Axe Mastery level 1 or higher. 
+
+Weight: 700 
+
+[You have discovered a hidden feature in the item!]
+
+[Insight has increased by 10.]
+
+ 
+
+“Wow.”
+
+I had used the Legendary Blacksmith’s Appraisal skill dozens of times so far. But it was the first time I found a hidden feature.
+
+‘Interesting… And my insight stat went up by 10 points at once!’
+
+I clenched both fists with joy. On the other hand, the guild members were surprised.
+
+“What? Vantner’s axe has suddenly changed?”
+
+“Hasn’t it changed shape? No?”
+
+While the guild members were surprised, Vantner was nervous.
+
+“D-Did anything go wrong with the repairing?”
+
+If a blacksmith lacked the skill to repair an item, the maximum durability of the item would permanently drop. Vantner was concerned about this. Was he trying to hurt my pride?
+
+‘What does he see me as…?’
+
+How could a legendary blacksmith fail in item repairing? 
+
+‘Also, the repairing hasn’t even started yet.’
+
+I started to heat up Vantner’s axe.
+
+Ttang! Ttang! Chiik.
+
+Repeated quenching, tempering, and forging. The heated axe was reborn anew. Vantner was nervous as he watched me hammering without speaking.
+
+30 minutes later. After using the grindstone, the Genuine Twin Bloody Axes were fully restored. I passed them to Vantner and…
+
+“Heooook!”
+
+Vantner freaked out as he examined his transformed axes.
+
+“Vantner?”
+
+Vantner’s exclamation confused the guild members. Jishuka, who had been watching the situation, asked with wide eyes.
+
+“What is the fuss?”
+
+Vantner responded to her in a trembling voice.
+
+“T-That… I don’t understand… L-Look for yourself…”
+
+Vantner shared the information of the item with the guild members. The guild members were shocked as they verified the information.
+
+“What is this?
+
+“The item has changed? This is nonsense!”
+
+All of a sudden, loud noises were heard from Khan’s smithy.
+
+‘What is the fuss? Huhut…’
+
+I dug at my ears while Jishuka came up to me and asked,
+
+“Grid! What kind of magic is this?”
+
+“Magic? What magic?”
+
+I stared straight into her shining, ruby-red eyes and said,
+
+“This is all skill.” 
+
+A legendary skill that only I could use in Satisfy.
+

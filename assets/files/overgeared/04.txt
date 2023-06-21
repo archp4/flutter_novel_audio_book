@@ -1,0 +1,241 @@
+'The minus level isn't a bug.'
+
+The numbers in parentheses beside the level indicated my current experience and the amount of experience required to reach the next level. The existence of this experience figure meant that I could level up. In the worst case, I was worried that I wouldn't be able to level up because I was bugged.
+
+'I'm glad it isn't a bug…' 
+
+I still felt upset. Think about it: my level was originally over 70, but now I was lower than even new players who had just created their characters.
+
+‘I have to endure this.'
+
+I braced myself. It might take time, but I could raise my level again. The reason for this positive thinking was due to the qualities of my profession and title. I didn't know anything about item creation, so I couldn't comment on the probability of adding additional options, but it was still good to have.
+
+‘The odds of enhancement will increase.'
+
+In Satisfy, items could be enhanced up to +10. 
+
+However, the price of the materials needed for enhancement was expensive. In addition, the higher the enhancement number and item rating, the lower the probability of the enhancement succeeding. In addition, if the enhancement was successful, the enhancement value would be +1; however, if it failed, it would be -3. The price for items with an enhancement of +6 would rise exponentially.
+
+'I don't know how much the probability has risen, but can't I feel hope for a large amount of money?'
+
+Both of the class characteristics that I mentioned were quite attractive. However, my bigger interest was that all items could be worn unconditionally. This was an unreasonable merit. Depending on the penalties that were applied, this attribute could disrupt the balance of the game.
+
+'Isn't this a fraudulent class attribute?'
+
+Most of the equipment items in Satisfy had conditions of use attached to them. If the conditions weren't met, the item couldn't be worn. For that reason, every level had strong limitations. But that didn't apply to me, due to the nature of my class.
+
+‘Really?'
+
+I opened my inventory.
+
+[Mamon's Greatsword] 
+
+Rating: Epic
+
+Durability: 88/204   Attack Power: 178~301   Attack Speed: -16%
+
+-Additional water damage will be added to all critical attacks.
+
+This is the greatsword patronized by the guardian of Lake Pamian, Mamon. Due to the influence of the lake, this sword has the strong aura of water.
+
+Conditions of Use: Level 65 or higher, more than 260 strength, more than 150 stamina.
+
+Weight: 1,050
+
+[Mengel's Plate Armor] 
+
+Rating: Rare
+
+Durability: 51/180   Defense: 165  Movement Speed: -2%
+
+* Strength +10
+
+This is a work made by the blacksmith Mengel in the fortified city of Patrian. With it, the defense is improved and the weight lowered. The wearer of this work can feel Mengel's strong willpower that remained behind.
+
+Conditions of Use: Level 60 or higher, more than 180 strength.
+
+Weight: 1,203 
+
+My current stats didn't meet the conditions of use attached to Mamon's Greatsword or Mengel’s Plate Armor. In other words, a normal person wouldn't be able to wear both items. But I was the exception.
+
+[Due to your class characteristics, you have equipped Mamon's Greatsword.] 
+
+[A penalty is applied because the item conditions aren't met.]
+
+[Attack power of Mamon's Greatsword will decrease by 30%. Only half of the option effects will be applied.]
+
+[Your understanding of Mamon's Greatsword is high so the penalties are reduced.]
+
+[Due to your class characteristics, you have equipped Mengel’s Plate Armor.]
+
+[A penalty is applied because the item conditions aren't met.]
+
+[Defense of Mengel’s Plate Armor's will decrease by 20%. Only half of the option effects will be applied.]
+
+[Your understanding of Mengel’s Plate Armor is high so the penalties are reduced.]
+
+"Amazing…"
+
+Satisfy rarely had items with no usage conditions. I recalled a set of beginner items that were representative of having no conditions. I didn't remember it exactly, but in the case of the beginner's greatsword received at level 1, the attack power was 5~13 and the defense of the beginner's armor was 7.
+
+But now I could use a weapon capable of at least 124 to 210 attack power, and 132 defense at level one.
+
+'Won't it be surprisingly easy to recover my level?'
+
+No matter how low my level was, I could hunt monsters around level 20 with just the attack power of Mamon's Greatsword. Thanks to Mengel’s Plate Armor, I wouldn't receive any damage from low-level monsters.
+
+In other words, I could hunt monsters much more quickly and easily than other users at the same level, thanks to the item effect. This would be directly linked to leveling up at the speed of light.
+
+'The basic penalties system is that rare items have a drop of 20% in the basic abilities, while epic items have a 30% drop. Only half of the item effects are applied…’ 
+
+The penalties were surprisingly small. Unique and legendary ranked items would be subjected to more penalties, but at this point, it was a sufficiently fraudulent ability. 
+
+"This is a legendary class…! But what is understanding?"
+
+Due to my excitement, I belatedly noticed the bit about 'understanding' that appeared in the notification windows. Then I checked the detailed information.
+
+[Item Understanding]
+
+Pagma's Descendant can understand the materials and principles of the item by using, disassembling, or repairing the equipment items. The higher the level of understanding, the more efficiently one can handle the items. If you have a 100% understanding, you can learn how to make that item. 
+
+"Ohu~"
+
+The higher my level of understanding, the fewer penalties there would be.
+
+"Then I will get the production method? Wow…"
+
+Ordinary production users had to pay a large amount of money or complete hard questions to get the production methods. But I could get it for free, as long as I increased my understanding.
+
+‘The repair skill is available and my item durability is low, so I will try and repair it later.’
+
+Then I looked at the title attributes. In combat, the one thing players had to be most cautious of was an abnormal status, due to its ability to often reverse the state of a battle. By the way, my title lowered the probability of being affected by abnormal statuses. It also said that I wouldn't die when my health was at the minimum, so I could be temporarily immortal.
+
+'Easily acknowledged, does that mean my affinity with NPCs can be easily increased?’
+
+"Puhuhut…"
+
+I was happy. I was so happy that I couldn't stop laughing. The class and title attributes alone gave me the feeling of being ahead of other regular users. I had become special. This felt like proper compensation for my three months of suffering.
+
+"But…"
+
+I would've enjoyed a much greater pleasure if I could've sold the book for money.
+
+“I missed out on the opportunity to get rid of my creditors and to drive a foreign car!"
+
+I suddenly went from feeling good to feeling bad.
+
+“~#@….!^%*@…. Ashur!!"
+
+I pounded the floor with frustration and resentment. I poured all out types of profanities towards Ashur. Gradually, my heart was soothed. It was due to an unfamiliar stat, so I decided to check it.
+
+[Composure]
+
+The probability of being affected by an abnormal state is lowered. If affected by an abnormal condition, you will recover quickly.
+
+* The higher the number, the higher the effect. 
+
+* Stat points can't be distributed to this stat.
+
+[Indomitable]
+
+Has a certain probability of invalidating a portion of the incoming damage. The lower the health, the higher the probability.
+
+* The higher the number, the higher the effect.
+
+* Stat points can't be distributed to this stat. 
+
+[Dignity]
+
+Can't be pushed down by others. There is a rare chance of making the enemy submit to you.
+
+* The higher the number, the higher the effect.
+
+* Stat points can't be distributed to this stat. 
+
+[Insight]
+
+Discover the target. Predict risks.
+
+* The higher the number, the higher the probability.
+
+* Stat points can't be distributed to this stat. 
+
+Every stat had a great effect. 
+
+‘By the way, how am I going to raise the number if I can't distribute points to it?'
+
+The explanation seemed huge, but they might be stats without much practical use. The moment that I was about to open the skills window.
+
+“Aack!”
+
+I screamed with fear. Something had suddenly touched my back. I belatedly recalled that I was in a Yatan Temple.
+
+"W-What!!!"
+
+I hurriedly turned around and reflexively wielded Mamon's Greatsword. The man behind me dodged my attack and raised both hands.
+
+“Hey, calm down. Do you want to kill a person?"
+
+The one who spoke was a Caucasian-looking man who seemed to have an assassin type class due to his light equipment and agile body. 
+
+‘His finger poked my back.'
+
+It might've be okay if it was a sword, but it was embarrassing to scream just because of a finger.
+
+“What is it?”
+
+The man shrugged.
+
+"It is dreary. Shouldn't you apologize after trying to kill a person?"
+
+His smile looked like a smirk. I disliked this type of person.
+
+'This person is speaking so impolitely at our first meeting.'
+
+Certainly, the man looked older than me. At first glance, he seemed to be in his mid-30s. However, my one year experience was enough to let me know how deceptive appearances were. I once called someone 'Brother', only to find out they were seven years older than me. 
+
+This bastard, he looked like he was in his 30s but…
+
+"Cough." My fists trembled and I barely managed to calm myself as I remembered the shameful past. “I'm sorry about that. But shouldn't you apologize for poking me without notice and surprising me?"
+
+The man laughed and asked for a handshake.
+
+"Young man, I called out to you. However, you were so engrossed in thinking that you didn't hear me. That is why I poked you. I'm sorry."
+
+I refused to shake hands with the man.
+
+“So why did you call me?"
+
+The man scratched his head and shrugged.
+
+“As you know, the Yatan Temple is filled with evil energy. Ordinary people will become afraid if they stay here for a while. But I observed you, and you are fine despite all the time that passed. In addition, you can even manage to laugh alone. You, don't you actually have great abilities?"
+
+'Perhaps this is…'
+
+As I got a hunch, I checked the name above the man's head. The man's eyes shone.
+
+"My name is Doran. I am a shadow who secretly protects Earl Steim. One or two days after I had gone on vacation, the Earl's esteemed daughter was kidnapped. I tracked her and found out that she was trapped in the basement of this temple. Won't you lend me your strength? I will give you a remuneration for the request."
+
+“I don't…"
+
+I thought the man was a user, but he was actually an NPC. Due to the perfect artificial intelligence, the distinction between users and NPCs was ambiguous and this mistake sometimes occurred. The name above his head was green, symbolizing an NPC. Then a notification window about a quest popped up.
+
+[Rescue the Earl's Esteemed Daughter] 
+
+Difficulty: S
+
+Irene, the only daughter of Earl Steim, is a beautiful and innocent virgin. The elders of Yatan had kidnapped Irene in order to sacrifice her for her virgin blood.
+
+Quest Clear Conditions: Rescue Irene within one hour after accepting the quest.
+
+Clear Reward: 3,000 gold, a low probability of becoming the earl's son-in-law. 
+
+* Earl's son-in-law: Nobility stat will open, all stats +20.
+
+You will be treated as a viscount after marrying the earl's esteemed daughter. Power and honor will rise. You can advance into the social circle of the nobles. You will receive a monthly salary. This can be a shortcut to becoming a high-ranking official or lord.
+
+Quest Failure: Level -2.
+
+[Would you like to accept the quest?]
+
+This was crazy.

@@ -1,0 +1,193 @@
+I smiled as Smith finished the lecture.
+
+“Is it difficult to understand with just words? If so, then I will demonstrate it for you."
+
+Smith poured in a certain ratio of iron, coke, and limestone before starting the blast furnace. (The fuel Coke, not the drink/drug) 
+
+As Smith's face and upper body became soaked with sweat, he controlled the hot wind coming from the bottom of the furnace and started burning the coke. At this point, the iron ore was gradually turned into molten iron due to Smith's reduction interactions. 
+
+The limestone reacted by separating the iron and into impurities to form slag. Smith alternated between filtering out the slag and maintaining the heat. The black debris gradually disappeared through holes at the bottom of the furnace, while the molten iron became increasingly orange.
+
+When the iron solidified, it would become pig iron. Pig iron was very hard and brittle because it contained a lot of carbon. It wasn't suitable for the crafting of weapons. In order to make it suitable for weaponsmithing, it was necessary to reduce the carbon content through a process called steelmaking.
+
+Smith, who was quietly immersed in his task, asked, “Do you understand what smelting is now?"
+
+I nodded and Smith sent me a satisfied expression.
+
+“Now that you've seen it, jaffa is easy to smelt. The jaffa ores have fewer impurities and a lower melting point, making it easier to refine than iron ore. The ratio of jaffa to coke to limestone is 12:2:4."
+
+[Mineral Smelting] 
+
+Difficulty: E
+
+Mineral smelting is the basis of production. Smith gives this job to you, who is dreaming of becoming a blacksmith.
+
+Quest Clear Conditions: Succeed in smelting the jaffa ore.
+
+Quest Reward: Affinity with Smith +30, experience +80, 300g of smelted jaffa.
+
+Quest Failure: It isn't easy to perfectly smelt minerals in the beginning. 
+
+Smith will understand if you fail. 
+
+There was no reason to refuse. I accepted the quest. 
+
+Smith prepared the furnace for me and added, "Don't be bothered if you fail. It might've looked easy as you watched me smelt it, but in reality, it's actually quite hard."
+
+I placed the ingredients in the furnace and put my feet on the bellows. At that moment, a translucent arrow appeared and pointed to one side of the bellows.
+
+'Is this the class compensation effect?'
+
+I placed my foot exactly where the arrow pointed. The arrow pointed in another direction, where I aimed the bellows at. The arrow repeatedly blinked, giving me the appropriate tempo. In the end, I managed to heat up the furnace in five minutes, unlike Smith who barely managed it in 10 minutes.
+
+Then a notification window popped up.
+
+[You can sense the temperature due to the rapid changes in ambient temperature. 30 degrees. 31 degrees. 31.5 degrees. 32…]
+
+The strange, yet unwelcome voice was heard in my mind.
+
+[Pagma's descendant is sensitive to changes in temperature. If there is a furnace in the vicinity, you can accurately measure the temperature inside the furnace.
+
+I placed my hand over the furnace.
+
+[700 degrees. 720 degrees. 740…]
+
+The constantly rising temperature was displayed in the continuously updating notification window.
+
+'1,000 degrees.'
+
+Iron ore was said to be suitable for smelting between temperatures of 1,150~1,250 degrees Celsius, but jaffa was suitable at around 950~1,000 degrees. As soon as the notification window read 1,000 degrees, I no longer needed to put effort into increasing the temperature.
+
+The jaffa slowly melted down. Compared to iron ore, jaffa had a lower concentration of impurities, so its orange glow was strong from the beginning. I immersed myself in filtering out the impurities. The translucent arrow told me the direction to move the metal pipes, so I was able to do it more quickly and accurately than Smith.
+
+Smith, who was concerned about whether I was doing well or not, became shocked as he checked my work.
+
+"H-Heok! Cough! Cough cough!"
+
+Smith was so surprised that he had trouble breathing. After a while, Smith barely regained stability and asked me in a trembling voice, "How are you so skilled at smelting?"
+
+His complexion was so pale that I was worried the old man might fall down.
+
+“Do you have experience smelting? This wasn't your first time?"
+
+“…It is my first time smelting…"
+
+Smith looked like he saw a ghost.
+
+“Huh… it is really ridiculous… This is a talent that can't be represented. A person with no experience is better than his teacher. It's like I'm dreaming. Are you the reincarnation of Pagma?"
+
+The term 'reincarnation of Pagma' was the common term of praise for especially talented blacksmiths. It was usually the best praise! Any blacksmith would explode with joy if they heard that they were Pagma's reincarnation.
+
+However, I was different.
+
+‘I'm not a reincarnation, but a descendant.'
+
+In the meantime, the high purity molten jaffa was completed. 
+
+[Quest success!]
+
+Smith smiled warmly and said,
+
+"Absolutely wonderful! You are a great friend."
+
+[Affinity with Smith has risen by 30.]
+
+[Experience has risen by 80.]
+
+[Your level has risen.]
+
+'Good! Level 2!'
+
+There was no greater joy than an easy level up. At one time, I was level 80. Now I was delighted at just reaching level 2. I was very worried about what would happen when my level reached the double digits. 
+
+“Bring it here."
+
+Smith poured the molten jaffa into the molten iron, mixing the two metals at a ratio of 1:12. Of course, this meant that for every single part of jaffa, there were 12 parts of iron. Smith placed the mixture in the furnace and started to heat it up again. He didn't forget to mix it together. He mixed it a total of six times before finishing the process by pouring the molten solution into a mold that he had prepared. 
+
+We would have to wait 40 minutes for the molten solution to harden inside the mold. Meanwhile, Smith handed me some jaffa that had already been completed.
+
+"This is the first time you've smelted metal, so I will give this to you as a memento."
+
+[3 pieces of jaffa have been acquired.]
+
+One piece of jaffa weighed around 700 grams to 1 kilogram. 300 grams of jaffa were worth one gold, so it was a considerable reward for an E-grade quest.
+
+‘Smith, this person is really great.'
+
+I was liking this blacksmith more and more. Smith approached with a big hammer and started hitting the mold that the molten solution was poured into. In the mold, the hardened molten iron appeared in the shape of a thick wire.
+
+Smith picked up the wire and placed it to one side, where there was another, smaller mold. He placed the wire on the mold and started hammering. After that was done, he used a grindstone to sharpen the edge.
+
+After some careful work, a typical arrowhead with a sharp end was completed. Although it was thick and heavy, the end was very sharp and could penetrate armor with no difficulty. The completed jaffa arrowhead was then secured to a pre-created arrow shaft.
+
+I watched the whole process from beginning to end, then a new notification window popped up.
+
+[Your understanding of the Jaffa Arrow is now at 100%. You will be able to use the Jaffa Arrow perfectly.]
+
+[You have learned how to make the Jaffa Arrow.]
+
+Smith asked me, “How is it? Can you make it?"
+
+"Yes."
+
+Smith laughed heartily.
+
+“Answering without hesitation… What great confidence. Like any weapon, particularly in arrows, balance is important. You need to balance the feathers, the arrowhead, and the shaft… If the arrows are even a little bit out of balance, they won't be able to fly as far as they can possibly go. It is very delicate work. Even so, can you really make it? Despite only watching the production process once?"
+
+"I can do it."
+
+“Hoh… then I will trust you again."
+
+[Create a Jaffa Arrow] 
+
+Difficulty: D
+
+The process of mixing two metals is never easy. It requires delicacy to make an arrow. For this reason, it is hard for novice blacksmiths to create a Jaffa Arrow.
+
+But Smith trusts you and leaves you with the expensive materials.
+
+Quest Clear Conditions: Produce 100 Jaffa Arrows.
+
+Quest Reward: Affinity with Smith MAX, experience +300, 50 Jaffa Arrows.
+
+Quest Failure: Smith's disappointment.
+
+* If the client is disappointed, you won't be assigned any new missions for a period of time. 
+
+Smith supported me by giving me 100 completed shafts and one kilogram of jaffa. I could also freely use the iron ore. This was all thanks to my incredibly high affinity with the blacksmith. If it were the previous me, I would've just accepted these materials.
+
+“I appreciate the courtesy, but I will make the shafts myself."
+
+I returned the 100 arrow shafts, but Smith couldn't understand my actions.
+
+“Why bother? If it is because you feel burdened, there is no need to worry."
+
+Tsk tsk, so this was why he was just a beginner blacksmith.
+
+“Are you going to support me with the shafts every time I make an arrow?"
+
+“No, I can't… Oh, so you will use this opportunity to learn how to make the shafts properly?"
+
+“That’s right. If possible, please support me with the materials required to make the shaft."
+
+Smith shrugged and gave me some sturdy branches and good quality feathers. “I was so focused on the smelting and making of the arrowhead that I didn't tell you how to make the shaft. I'll teach you how to make the shaft now."
+
+There were limits to how much a beginner blacksmith could teach me. I told him I would take care of it and pulled out a thick booklet from my inventory. The title was 'List of Items Production Methods.'
+
+When I opened the book, I saw that four things were listed in the table of contents. They were the production methods of an axe, a pickaxe, the Jaffa Arrow, and 'Failure'. It might be empty and simple now, but there will a day when this 'List of Items Production Methods' book will be filled up.
+
+I opened the page on how to make a Jaffa arrow and read it. The method of making the shaft was described in detail, complete with pictures and text. I read it and read it again for a while before closing the book.
+
+'Okay, I can do it.'
+
+I was a little tense since it was my first time making an item. No, I was more excited than tense. I started making the arrow shaft. First of all,  I straightened the branches into a straight line. The badly bent branches were lightly seared and then straightened.  I cut the branches to a regular length and cut the top (a U shaped groove where the arrow would be placed against the bowstring) of the shaft. Then I finished by pasting on feathers.
+
+One, two, three.
+
+As the number of completed shafts increased, my proficiency steadily grew. It was a great effect as it combined my high dexterity that enabled delicate work with the correction effect of my class.
+
+Smith once again felt admiration as he watched.
+
+“This isn't the workmanship of a novice… You figured out the production method just by looking at the finished shaft? You truly have the eyes of a craftsman. The dexterity and accuracy are also excellent."
+
+I was able to finish 100 shafts without difficulty before I started making the arrowheads.

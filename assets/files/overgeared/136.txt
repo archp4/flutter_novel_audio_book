@@ -1,0 +1,289 @@
+There was an old saying in games that 'levels were bullies.'
+
+That saying was also established in Satisfy. Satisfy might've revolutionized the world by implementing the first virtual reality system, but it was a game at its core. In Satisfy, level was the most primitive and important concept.
+
+10 stat points were gained every time the level increased, and users would become stronger as their stats increased. The higher their level, the stronger a user could become because they could wear good items or acquire powerful skills. It wasn't just for these simple reasons. The higher the level, the more the unique functions of the stats showed.
+
+Let's take the strength stat for example. 
+
+If the user's level was less than 100: The user had 0.1 attack power, 3 health points and the weight limit increased by 20 with every point.
+
+But if the user's level was above 100, it would be 0.2 attack power, 5 health points and a weight limit increase of 30 points per every point in strength. Once the level was above 200, attack power increased by 0.3, health by 7 points and the weight limit by 40 per point.
+
+In this way, the effect of the stats increased every 100 levels. This was called the stats awakening. The effect of the stats awakening was huge, so the higher the level, the better the effect.
+
+However, that was almost unrelated to Grid, who had a legendary class.
+
+A mere level 170 was able to knock down four rankers over level 200 and kill dozens of griffons who were level 260. He easily hunted hundreds of griffons (thanks to Toban properly acting as bait), so he was a scammer who transcended the concept of level.
+
+'The epic hidden classes are classified as powerhouses, and Grid is a legendary class… I'm speechless.'
+
+They camped in the griffon habitat and spent all day and night hunting. Toban suddenly wondered, “Grid, how did you get a legendary class?"
+
+A lot of effort was needed to become a hidden class, so it was almost like winning the lotto. It was basic common sense, but Toban wanted to know the specifics. He wondered about the process Grid went through to become a legendary class. Listening to the story would be fun, and he could use it as a reference.
+
+But these were never pleasant memories for Grid. He didn't want to recall his worst memories of the several months of suffering, where he died dozens of times and lost most of his possessions.  
+
+"Don't ask…"
+
+Toban verified Grid's dark expression and gave up on listening to the story.
+
+'He is furious. He must've suffered. Indeed, getting a legendary class wouldn't be easy… I would rather leave this place…'
+
+They had been hunting in the griffon habitat for the past four days. In the meantime, Grid had gained 10 levels and reached level 180. There was the feeling that Grid wanted to reach level 200 here.
+
+But it was hard for Toban to bear. For the past four days, he hadn't acquired any experience or items. He was forced to wear Malacus' Cloak and act as bait, while Grid reaped all the rewards. His number one position on the paladin rankings that he had firmly guarded for months might be taken away by the second ranked Damian. 
+
+Toban was nervous about this and prompted. "Grid, let's stop hunting now. Don't you have to clear your quest?"
+
+"Hrmm…" Grid was troubled.
+
+The griffon habitat gave a lot of experience, so he wanted to stay here until level 200.
+
+'The difference between level 180 and level 200 is huge…'
+
+But it was an unreasonable decision.
+
+'It took four days to gain 10 levels. It will take at least eight days to gain 20 levels, but I am reluctant to delay it that long.'
+
+To be honest, he felt a little bit sorry for Toban. He treated Toban as a slave, but he started to feel some remorse after a day or two.
+
+'He's a ranker so he can't serve any longer for free… It will be good to end it here.'
+
+It was the day when he felt remorse for taking advantage of someone! He never even imagined it.
+
+'I need to be tougher in order to survive in this harsh world…!'
+
+Why did God make him so naive and nice? Grid felt some resentment towards God as he made preparations to leave.
+
+“Let's go."
+
+"Ohh!"
+
+Toban exclaimed. He was relieved about finally being able to escape from acting as griffon bait. Now it was time to go to the Judar Church. Grid wanted to finish this quest quickly. Toban wanted to regain his freedom.
+
+Then the two people arrived at the Judar Sanctum in less than a day. Toban paused in front of it.
+
+“Leader Pascal is aiming for the Holy Light set. Perhaps he will be hostile towards you. There might be a fight, but if so, I won't be able to help you. Do you understand?"
+
+"I am used to fighting alone."
+
+Grid wasn't particularly worried. How could the leader of the Judar Church be stronger than the pope? He thought he would win if they fought. But before that, he had to check his status again.
+
+'Know yourself before knowing the enemy. Status window!'
+
+Name: Grid
+
+Level: 180 (140,090/5,531,200)
+
+Class: Pagma's Descendant
+
+* The probability of adding additional options when making items will increase.
+
+* The probably of item enhancement will increase.
+
+* All equipment items can be worn unconditionally. However, there is a penalty depending on the rating of the item.
+
+Title: One who Became a Legend
+
+* Abnormal conditions don't work well on you.
+
+* You won't die when health is at the minimum.
+
+* Easily acknowledged.
+
+Title: First Unique Item Maker
+
+* Dexterity +200
+
+Title: Only Legendary Item Maker
+
+* Dexterity +200
+
+Title: Knight Slayer
+
+* Stamina +100.
+
+* Strength +30
+
+Title: Apostle of Justice
+
+* All stats +10.
+
+* The Apostle of Justice's bravery is unmatched.
+
+Health: 29,560/29,560+7,000    Mana: 3,240/3,240
+
+Strength: 1,584   Stamina: 962   Agility: 417
+
+Intelligence: 439 + 200   Dexterity: 984    Persistence: 498
+
+Composure: 364  Indomitable: 414   Dignity: 364   
+
+Insight: 664  Courage: 308
+
+Stat Points: 0
+
+Weight: 25,519/57,480
+
+[Abilities Details]
+
+Basic Attack Power: 325   Weapon Attack Power: 412~579
+
+Additional Attack Power:
+
+* Pagma's Swordsmanship Lv.1 (Deactivated):20% additional attack power.
+
+* God Dominion's Blessing: 15% additional attack power.
+
+Total Attack Power: 995~1220
+
+Basic Magic Power: 220    Item Magic Power: 100
+
+Additional Magic Power: None
+
+Total Magic Power: 320
+
+Basic Defense: 192    Item Defense: 539
+
+Additional Defense:
+
+* Holy Light Battle Gear Set: Defense +500
+
+Total Defense: 1,231
+
+At level 100, he gained 0.2 attack power per every point in strength and 0.5 magic power per every point in intelligence. In addition, stamina gave 0.2 defense per point. When summing up, he rounded off the decimal point.
+
+Grid's base damage, magic power and defense were abnormally higher than users of the same level. This was because he'd acquired many stats through the production of items. But Grid wasn't satisfied. He didn't like the damage and defense figures applied from the items he wore.
+
+The +5 Dainsleif's attack power was 549~772, but due to the 25% penalty only 412~579 was applied. In addition, there was a 40~55% penalty for his armor, so the value wasted was too big. It caused a feeling of loss.
+
+'Being able to wear all items is fraudulent, but the penalty system is really annoying. If I'm going to be a scammer, make me a scammer. Why is there the penalty system?'
+
+It was okay for now. When he killed the pope, he was 30 levels lower and his defense was much worse. 
+
+"Sigh… Okay!"
+
+He thought positively as he entered the Judar Sanctum. He handed the paladin blocking his path the letter of recommendation from Isabel and said, “I came to see Leader Pascal."
+
+The paladin checked Isabel's introduction letter and quickly opened the way.
+
+"Welcome Mister Grid. The leader is waiting."
+
+"…?"
+
+It was hospitable? Grid was surprised by the unexpected response and looked back. Toban was hiding behind a pillar. Toban sent him a whisper.
+
+-Grid, I’m sorry but I can't enter with you. I'm afraid that the leader will be angry if he sees me.
+
+'Coward…'
+
+In the end, Grid entered alone. Then he faced all types of delicacies. The 11th leader of the Judar Church, Pascal warmly welcomed Grid.
+
+“I am honored to meet the person who received the blessings of Goddess Rebecca and God Dominion!"
+
+Pascal was an ambitious person. But his ability to read the situation was excellent. He heard that Grid defeated Malacus and was recognized by the Rebecca Church and Dominion Church, so he knew how foolish it was to be hostile to Grid.
+
+Besides, there was no reason to feel hostile. If the pope's position became vacant, Pascal was be the first candidate to become the next pope, even without the Holy Light set.
+
+'Rather, things have become easier.'
+
+At the moment, there were few people in the Rebecca Church with the talent to become pope candidates. And the leader of the Dominion Church wasn't a greedy person. Pascal was convinced that he would become pope. He felt strong gratitude towards Grid who caused all of this.
+
+“I would like to hear your story about how you defeated the demon Malacus and the corrupt Pope Drevigo. Now, go ahead and sit. The food we prepared for you will become cold."
+
+“…”
+
+On this day, Grid increased his affinity with Pascal, a pope candidate. Then the pavranium safely received God Judar's blessing.
+
+[Golden Discs Made of Pavranium]
+
+Durability: Infinite
+
+Golden discs made of pavranium, the strongest mineral produced by the collaboration between the legendary blacksmith Pagma and the legendary great magician Braham.
+
+By default, they revolve around and protect their owner. They will also take other actions when given commands from their owner.
+
+* They have obtained healing skills due to Goddess Rebecca's blessing. They will increase their owner's health recovery speed by 300%.
+
+* They have obtained an attack buff skill due to God Dominion's blessing. The owner's attack power will increase by 15%.
+
+* They have obtained a defense buff skill due to God Judar's blessing. The owner's defense will increase by 15%.
+
+Weight: 3
+
+'Good!'
+
+This long journey was finally heading towards the end. Now he just needed to receive the blessing of God Yatan and the quest would be complete.
+
+Pascal spoke to the excited Grid, “But Grid, it is virtually impossible to find the sanctum of the Yatan Church. They're very secretive. so the location of their sanctum has never been exposed in history. You said that you need God Yatan's blessing? It might become possible at some later date."
+
+“…”
+
+Pascal's words were true. Grid communicated with Toban afterwards, but they couldn't figure out the location of the Yatan Sanctum. It seemed like it would take a long time before he could discover it.
+
+In the end, Grid was forced to return to Winston without achieving his goal. Winston was boisterous when he returned.
+
+"What? What is this event?"
+
+The users were excited. At the entrance to Winston, there were many famous NPCs and soldiers, including Phoenix. Even Lady Irene showed up. The Tzedakah Guild were also gathered, and it was rumored that they had gone under Lady Irene a while ago. 
+
+“Perhaps the king is coming?"
+
+"Wow, it must be. The king probably heard rumors about Winston's development and is coming to inspect it directly."
+
+It wasn't easy to see the king of a country. There was a rumor that just seeing a king could cause a positive effect on their stats. How spectacular would the procession be? Thousands of users were gathered like ants all over the walls and square as they watched the gates with anticipation.
+
+Then after a while.
+
+Finally, the gates opened and someone entered. The soldiers verified the identity and blew their trumpets once, then the knights drew their swords and saluted the person. Then people smiled brightly and blew pollen.
+
+However, they weren't enthusiastically welcoming the king. No, it wasn't even an NPC, let alone the king. It was a scruffy user who looked like a beginner. The man had a hat to completely cover his face and ID, like he was expecting the attention. Then Lady Irene ran to the man.
+
+"Huh?"
+
+The users watching the situation simultaneously cried out. Irene was praised as the goddess of Winston due to her beauty and kind heart, making her loved by many male users. So why was she hugging this scruffy and suspicious looking man?
+
+"I've missed you so much."
+
+Irene stared at the man with an expression of love. It was an unbelievable sight.
+
+"W-What is this?"
+
+Why did such a beautiful and noble NPC like a user like this? While the users were feeling stunned, Jishuka, one of the most beautiful women in the world, also approached the man.  She had a bright smile on her usually cold face.
+
+"You came back safely. I was waiting anxiously."
+
+"Keok…"
+
+The users were dumbfounded. Winston's lady was from an influential NPC family and this mysterious man was also welcomed by the top ranker and beauty Jishuka. This scene became a huge issue and was reported to the media around the world. Of course, there was a hot debate on the Internet.
+
+“Oh, I wonder who that man is?"
+
+After dinner.
+
+Sehee was sitting next to Youngwoo on the couch and showed interest in the mysterious man appearing on the news. Sehee had no direct experience with playing Satisfy, but she often watched it on TV, so she understood why it was such a big issue.
+
+"He looks like a beginner and a fool at first glance, so why is he loved by such big shots?"
+
+Sehee asked the question and the yawning Youngwoo explained, "That's me."
+
+"…Huh?"
+
+“I was away for a while on a quest, so everyone was welcoming my return."
+
+"Hehe… Don't I have a lot of popularity?"
+
+Kwajijik!
+
+The TV remote control in Sehee's hand made a strange breaking noise. Youngwoo clicked his tongue. "Wow… Even if the control is 10 years old, how can it break like this? Wow, the maker of this is really bad. We shouldn't buy a TV from here again."
+
+"Bah!"
+
+Sehee glared at her brother and went to her room. Once Youngwoo was left alone, he couldn't endure the fatigue and dozed off on the couch.
+
+“… The first night… Huhuhu!"
+
+The sound of sly laughter echoed through the living room.
+
+Too busy tomorrow so have the chapters today instead. Also, no Q&A this month.

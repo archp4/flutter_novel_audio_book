@@ -1,0 +1,299 @@
+‘For Kill to only do 1 damage, it isn’t just physical defense. They have resistance to physical attacks. The status resistance is also high.’
+
+ 
+
+[Kill Lv. 6 (57.1%)]
+
+A killing sword that expresses hatred.
+
+Deals 1,800% of your attack power to a single target. There will be a bleeding and desperation effect.
+
+Skill Usage Conditions: Have a sword type weapon equipped.
+
+Skill Mana Cost: 1,000
+
+Skill Stamina Consumption: Consumes 20% of your stamina.
+
+Skill Cooldown Time: 380 seconds
+
+ 
+
+As with any skill, Kill was steadily strengthened as the level rose. The resource consumption and cooldown time decreased, while the power increased. The level 360~370 monsters on the islands in the 40’s would lose more than 60% of their health if hit by Grid’s Kill unleashed from Grid’s Greatsword.
+
+However, the golden crown received only 1 damage. This couldn’t be explained with just high defense.
+
+‘I need to check to make sure.’
+
+Grid thought and planned as the golden crown aimed the club at his head.
+
+Peeok!
+
+ 
+
+[You have suffered 6,360 damage.]
+
+ 
+
+“Ugh.”
+
+It wasn’t a damage that Grid could make fun of.
+
+‘One-tenth of my health disappeared in one blow.’
+
+At level 300, one strength stat increased health by 7, while one stamina stat increased health by 25.
+
+There was the 6,000 health added by the Holy Light Set, the 3,000 health added by the Man who has Touched Hell title, and 3,000 health added by Tiramet’s Belt and Tiramet’s Shoulderguards, giving Grid approximately 63,000 health.
+
+Now he received 6,000 damage from base damage, not a skill, so he became tense.
+
+‘Let’s concentrate.’
+
+Grid moved forward. He aimed Pinnacle at the golden crown.
+
+ 
+
+[Pinnacle Lv. 3 (15.9%)]
+
+A sword that expresses the essence of a warrior god.
+
+Deals 780% of your attack power to a single target. This skill will ignore 62% of the target’s armor.
+
+Skill Usage Conditions: Have a sword type weapon equipped.
+
+Skill Mana Cost: 700
+
+Skill Cooldown Time: 143 seconds 
+
+ 
+
+Seokeok!
+
+Pinnacle slashed at the wide chest of the golden crown. Looking at the momentum, it was a blow that could cut the golden crown in half. But the result?
+
+ 
+
+[You have dealt 1 damage to the target.]
+
+ 
+
+‘Indeed.’
+
+Grid was convinced. This green monster with a golden crown resisted physical attacks. The proof was that Pinnacle, which ignored the target’s defense, only dealt 1 damage.
+
+‘Their weakness…’
+
+Magic. Enemies immune to physical damage were vulnerable to magic, just as those immune to magic were vulnerable to physical attacks. This was common sense for users playing Satisfy, and the reason why party play was prevalent in Satisfy.
+
+It was difficult for a warrior with strong physical attacks or a magician with high magic power to overcome crises in the game alone. But Grid was different. He had the ability to play the game by himself.
+
+Was it because of his legendary class? No, it was because of his relationship with Braham. Due to that bond, Grid had learned magic.
+
+“Magic Missile.”
+
+ 
+
+Magic Missile (Enhanced) Lv. 2 (37%)
+
+A magic missile developed by the legendary great magician who has completely overturned the activation formula.
+
+It boasts tremendous power, but consumes a lot of resources.
+
+It deals damage equal to twice your current magic power to the target. It also ignores the enemy’s magic resistance.
+
+Resource Consumption: 380 Mana.
+
+Skill Casting Time: 1 second.
+
+Skill Cooldown Time: 4.8 seconds
+
+ 
+
+Peeng!
+
+A sharp flash of light pierced the heart of the golden crown.
+
+‘Good.’
+
+The biggest advantage of Magic Missile was its fast casting speed. Grid smiled with satisfaction as he saw the golden crown that couldn’t cope with the sudden emergence of Magic Missile. But that smile didn’t last long.
+
+ 
+
+[You have dealt 1 damage to the target.]
+
+ 
+
+“What?”
+
+It resisted physical and magic attacks? The golden crown struck the confused Grid.
+
+ 
+
+[You have suffered 6,160 damage.]
+
+ 
+
+“This really hurts.”
+
+Grid wore the Slaughterer’s Eye Patch. His ability to read the enemy’s attack orbit was excellent. But the golden crown was a level 380 monster, so its physical abilities far overwhelmed the level 305 Grid. In addition, there was the penalty due to the level difference.
+
+As a result, Grid couldn’t fully read the movements of the golden crown and allowed a successive string of attacks. Grid was pushed back by the momentum.
+
+“Kiyaaak!”
+
+The golden crown approached and swung its club again.
+
+Jjejejeok!
+
+‘This damn monster…!’
+
+There was 17 minutes and 1 second remaining for the mission time limit. He needed to hunt 10 golden crowns in 20 minutes, but he couldn’t even hunt one in 3 minutes, making Grid feel nervous. But he didn’t despair.
+
+‘Keep my composure.’
+
+Grid had numerous experiences with unexpected things. He wouldn’t repeat the same mistakes again.
+
+Jjang! Jjejeong!
+
+Grid calmly blocked the golden crown’s onslaught.
+
+‘Physical attacks and magic attacks don’t work on the opponent.’
+
+Then how could he hunt them?
+
+“Ah…!”
+
+Grid was blocking the club from hitting his collarbone when he remembered an unusual monster.
+
+‘Mimic!’
+
+Mimic. They were monsters that looked like treasure chests to deceive adventurers. One of their greatest strengths was that they had the ‘resist all damage’ passive. Grid had only met a mimic once.
+
+‘No matter the attack, it only suffers 1 damage.’
+
+However, this didn’t mean that a mimic was invincible. The maximum health of a mimic was 10~120 depending on their level. Grid only dealt 1 damage, but he would be able to hunt it if he hit it many times in a row.
+
+That’s right.  Grid judged that the golden crown was a monster like a mimic.
+
+‘It is only 1 damage per hit, but they have low health.’
+
+He just needed to hit them a lot. Grod swapped from Grid’s Greatsword to Iyarugt to increase his attack speed and used Link.
+
+Pit!
+
+Pipipipipit!
+
+ 
+
+[Link Lv. 7 (61.2%)]
+
+A dazzling sword dance that is like the wings of a butterfly.
+
+Deals 800% of your attack power to a single target.
+
+Skill Usage Conditions: Have a sword type weapon equipped.
+
+Skill Mana Cost: 300
+
+Skill Cooldown Time: 60 seconds
+
+The number of strikes for Link was proportional to the attack speed. With Iyarugt, he could do a total of 25 strikes.
+
+[You have dealt 1 damage to the target.]
+
+[You have dealt 1 damage to the target.]
+
+[You have dealt…]
+
+…
+
+…
+
+The biggest advantage was that continuous attacks caused the target to stiffen. Due to the series of attacks, the golden crowns were unable to move. Grid used Continuous Stab during that gap. It was the skill he acquired from the reservist training.
+
+Puk!
+
+Puk puk puk!
+
+A total of five stabs struck the golden crown’s body. In the midst of this, the God Hands were also moving rapidly. All of them held a weapon and attacked the golden hands without stopping.
+
+‘It should be now.’
+
+Grid believed that the golden crown’s health gauge should’ve fallen sharply. But reality was relentless when he checked it with his eyes.
+
+“Heok.”
+
+Despite the efforts of Grid and the God Hands, the golden crown’s health gauge was still full. Grid realized. The golden crown was different from a mimic.
+
+‘Should I try another way?’
+
+Pakak!
+
+Grid’s face was hit by the club while he was trying to think.
+
+Kuuong!
+
+Grid felt pain as he was thrown back and hit a rock.
+
+“Kilkil!”
+
+Grid heard a bad laugh from above his head.
+
+‘Don’t tell me.’
+
+Grid stiffened as he looked in the direction of the laughter. Then he felt despair. Three golden crowns were looking down at him from a rock.
+
+‘The worst.’
+
+He couldn’t do anything against one golden crown. Now three more enemies were added.
+
+‘I am going to die from normal mobs, not a boss.’
+
+In the beginning, Grid was killed by rabbits. But this experience became unfamiliar since becoming Pagma’s Descendant. The mental blow was very big.
+
+‘There has to be a way…’
+
+The three golden crowns jumped from the rock.
+
+Fortunately, there was a lack of cooperation and the separate attacks could be blocked by the God Hands, buying time for Grid’s brain to work. He couldn’t think of a way to overcome this crisis.
+
+‘Should I just give up and die?’
+
+He had barely recovered the experience that he lost from dying to the clone, and now he had to die again? It couldn’t be.
+
+‘It would be better to give up the mission and survive.’
+
+Grid decided and was about to summon Randy and Noe.
+
+[The name is golden crown? The body isn’t the green monster, but the crown on its head.]
+
+It was an unexpected voice. The familiar voice entered Grid’s ears.
+
+“You…!?”
+
+Grid was confused by the unimaginable existence and raised his head to look at the sky, where a faint soul was floating. It was Braham’s soul.
+
+[Pagma’s Descendant is playing around in the playground that Pagma made.]
+
+Originally, Braham’s voice was filled with infinite power. It contained absolutely confidence and magic power. But not anymore. Compared to before, Braham’s voice was very weak.
+
+‘He still hasn’t found his body? What on earth happened?’
+
+Why did he come here in the first place? Grid was puzzled but still kept an eye on the golden crowns. After avoiding the clubs flying from the front and rear, he cut the golden crown of a green monster with Iyarugt.
+
+Then.
+
+ 
+
+[You have dealt 5,900 damage to the target.]
+
+ 
+
+‘This is the strategy to handle them.’
+
+Thanks to Braham, Grid got a glimpse of the light. But he still had to give up on the mission. There was 12 minutes and 59 seconds remaining. He might’ve discovered the weakness of the golden crowns, but it was difficult to beat 10 of them in that time.
+
+Braham suggested to Grid.
+
+[Accept my soul once again. This time for a bit longer than before.]
+
+Grid received a hidden quest.
