@@ -46,10 +46,9 @@ class _NovelDetailViewState extends State<NovelDetailView> {
 
   getIndex(int index) {
     if (isDescending) {
-      print(initList!.length - index);
       return initList!.length - index - 1;
     }
-    print(index);
+
     return index;
   }
 

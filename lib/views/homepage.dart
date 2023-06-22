@@ -2,7 +2,9 @@
 import 'package:flutter/material.dart';
 import 'package:novel_audiobook_version/models/const_value.dart';
 import 'package:novel_audiobook_version/models/display_novel.dart';
+import 'package:novel_audiobook_version/models/page_navigatior.dart';
 import 'package:novel_audiobook_version/services/dio_home.dart';
+import 'package:novel_audiobook_version/views/search_view.dart';
 import 'package:novel_audiobook_version/widgets/display_home_novel_tile.dart';
 
 class Homepage extends StatefulWidget {
@@ -43,6 +45,12 @@ class _HomepageState extends State<Homepage> {
           title: const Text("Homepage"),
           elevation: 0,
           backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+          actions: [
+            IconButton(
+              onPressed: () => PageNavigation.to(context, const SearchView()),
+              icon: const Icon(Icons.search),
+            )
+          ],
         ),
         body: Container(
           margin: const EdgeInsets.only(
