@@ -2,10 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:novel_audiobook_version/models/const_value.dart';
 import 'package:novel_audiobook_version/models/page_navigatior.dart';
-
 import 'package:novel_audiobook_version/services/dio_home.dart';
 import 'package:novel_audiobook_version/views/novel_details.dart';
-
 import '../models/search_display_novel.dart';
 
 class SearchView extends StatefulWidget {
