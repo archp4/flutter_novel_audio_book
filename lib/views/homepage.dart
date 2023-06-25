@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:novel_audiobook_version/models/const_value.dart';
 import 'package:novel_audiobook_version/models/display_novel.dart';
 import 'package:novel_audiobook_version/models/page_navigatior.dart';
+import 'package:novel_audiobook_version/models/search_display_novel.dart';
 import 'package:novel_audiobook_version/services/dio_home.dart';
 import 'package:novel_audiobook_version/views/search_view.dart';
 import 'package:novel_audiobook_version/widgets/display_home_novel_tile.dart';
+import 'package:novel_audiobook_version/widgets/main_display_tile.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -16,7 +18,7 @@ class Homepage extends StatefulWidget {
 
 class _HomepageState extends State<Homepage> {
   List<DisplayNovel>? popularList;
-  List<DisplayNovel>? lastestList;
+  List<List<MainDisplayNovel>>? list;
   bool isLoading = true;
 
   @override
@@ -26,9 +28,8 @@ class _HomepageState extends State<Homepage> {
   }
 
   getData() async {
-    lastestList = await DioHome.requestLastestUpdate();
-    popularList = await DioHome.requestPopularNovel();
-    if (popularList != null) {
+    list = await DioHome.requestHomePageDetails();
+    if (list != null) {
       setState(() => isLoading = false);
     }
   }
@@ -62,8 +63,7 @@ class _HomepageState extends State<Homepage> {
               ? const Center(
                   child: CircularProgressIndicator(),
                 )
-              : Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+              : ListView(
                   children: [
                     Text(
                       getGreeting(),
@@ -73,24 +73,54 @@ class _HomepageState extends State<Homepage> {
                       "User",
                       style: Theme.of(context).textTheme.headlineLarge,
                     ),
-                    const SizedBox(height: 16),
-                    Text(
-                      'Lastest Updates',
-                      style: Theme.of(context).textTheme.titleLarge,
-                    ),
-                    const SizedBox(height: 16),
-                    getScrollableList(list: lastestList!),
-                    const SizedBox(height: 16),
                     Text(
                       'Popular Novels',
                       style: Theme.of(context).textTheme.titleLarge,
                     ),
                     const SizedBox(height: 16),
-                    getScrollableList(list: popularList!),
+                    DisplayNovels(title: 'Lastest Updates', novels: list![0]),
+                    DisplayNovels(title: 'Completed', novels: list![1]),
+                    DisplayNovels(title: 'Romance', novels: list![2]),
+                    DisplayNovels(title: 'Fantasy', novels: list![3]),
+                    DisplayNovels(title: 'Drama', novels: list![4]),
+                    DisplayNovels(title: 'Action', novels: list![5]),
+                    // getScrollableList(list: popularList!),
                   ],
                 ),
         ),
       ),
+    );
+  }
+}
+
+class DisplayNovels extends StatelessWidget {
+  const DisplayNovels({
+    super.key,
+    required this.title,
+    required this.novels,
+  });
+
+  final String title;
+  final List<MainDisplayNovel> novels;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(
+          title,
+          style: Theme.of(context).textTheme.titleLarge,
+        ),
+        const SizedBox(height: 16),
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [for (var novel in novels) MainDisplayTile(novel: novel)],
+          ),
+        ),
+      ],
     );
   }
 }

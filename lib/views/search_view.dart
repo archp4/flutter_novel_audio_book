@@ -14,7 +14,7 @@ class SearchView extends StatefulWidget {
 }
 
 class _SearchViewState extends State<SearchView> {
-  List<SearchDisplayNovel>? tempList;
+  List<MainDisplayNovel>? tempList;
   bool isSearchResultDone = false;
   bool is404 = false;
   bool isSearchInitited = true;
@@ -75,7 +75,7 @@ class _SearchViewState extends State<SearchView> {
 }
 
 class SearchBoday extends StatelessWidget {
-  final List<SearchDisplayNovel> resultList;
+  final List<MainDisplayNovel> resultList;
   final bool isSearchResultDone;
   final bool isSearchInitited;
   final bool is404;
@@ -109,29 +109,51 @@ class SearchBoday extends StatelessWidget {
                   NovelDetailView(novelURL: resultList[index].href),
                 ),
                 child: Container(
-                  height: 120,
-                  alignment: Alignment.center,
-                  padding: const EdgeInsets.only(
-                    left: ConstantValue.defaultPadding,
-                  ),
-                  decoration: const BoxDecoration(
-                    border: Border(
-                      bottom: BorderSide(
-                        color: Colors.grey,
-                        width: 1,
-                        style: BorderStyle.solid,
+                    alignment: Alignment.centerLeft,
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: ConstantValue.defaultPadding * .4,
+                      vertical: ConstantValue.defaultPadding * .8,
+                    ),
+                    decoration: const BoxDecoration(
+                      border: Border(
+                        bottom: BorderSide(
+                          color: Colors.grey,
+                          width: 1,
+                          style: BorderStyle.solid,
+                        ),
                       ),
                     ),
-                  ),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Image.network(resultList[index].imgSrc),
-                      const SizedBox(width: ConstantValue.defaultPadding),
-                      Flexible(child: Text(resultList[index].name)),
-                    ],
-                  ),
-                ),
+                    child: Text(resultList[index].name)
+                    // Row(
+                    //   crossAxisAlignment: CrossAxisAlignment.start,
+                    //   children: [
+                    //     Image.network(
+                    //       resultList[index].imgSrc,
+                    //       height: 140,
+                    //     ),
+                    //     const SizedBox(width: ConstantValue.defaultPadding),
+                    //     Column(
+                    //       crossAxisAlignment: CrossAxisAlignment.start,
+                    //       mainAxisAlignment: MainAxisAlignment.start,
+                    //       mainAxisSize: MainAxisSize.min,
+                    //       children: [
+                    //         Flexible(
+                    //           child: Text(resultList[index].name),
+                    //         ),
+                    //         const SizedBox(
+                    //           height: ConstantValue.defaultPadding * .5,
+                    //         ),
+                    //         Row(
+                    //           children: [
+                    //             for (var tag in resultList[index].tags)
+                    //               TagTile(tag: tag)
+                    //           ],
+                    //         )
+                    //       ],
+                    //     ),
+                    //   ],
+                    // ),
+                    ),
               );
             },
           )
@@ -144,5 +166,34 @@ class SearchBoday extends StatelessWidget {
                     ? const Text("Serach for novel here")
                     : const Text("data"),
           );
+  }
+}
+
+class TagTile extends StatelessWidget {
+  const TagTile({
+    super.key,
+    required this.tag,
+  });
+
+  final String tag;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(
+        horizontal: 10,
+        vertical: 5,
+      ),
+      decoration: BoxDecoration(
+        border: Border.all(color: Colors.grey, width: 1),
+        borderRadius: BorderRadius.circular(
+          ConstantValue.defaultPadding,
+        ),
+      ),
+      child: Text(
+        tag,
+        style: Theme.of(context).textTheme.labelSmall,
+      ),
+    );
   }
 }

@@ -13,6 +13,7 @@ class DioHome {
   static var popular_novel = '/pop_novel';
   static var searchUrl = '/search';
   static var readerChapter = '/chapter';
+  static var homepage = '/homepage';
 
   static final dio = Dio();
 
@@ -51,14 +52,14 @@ class DioHome {
     return null;
   }
 
-  static Future<List<SearchDisplayNovel>?> searchNovel(
+  static Future<List<MainDisplayNovel>?> searchNovel(
       {required String url}) async {
     Response response = await dio.get('$urlX$searchUrl?query=$url');
     if (response.statusCode == 200) {
-      var tempList = <SearchDisplayNovel>[];
+      var tempList = <MainDisplayNovel>[];
 
       for (var element in response.data) {
-        tempList.add(SearchDisplayNovel.fromMap(element));
+        tempList.add(MainDisplayNovel.fromMap(element));
       }
       return tempList;
     }
@@ -71,6 +72,25 @@ class DioHome {
     if (response.statusCode == 200) {
       var temp = ReaderChapter.fromMap(response.data);
       return temp;
+    }
+    return null;
+  }
+
+  static Future<List<List<MainDisplayNovel>>?> requestHomePageDetails() async {
+    Response response;
+    final url = '$urlX$homepage';
+    response = await dio.get(url);
+    if (response.statusCode == 200) {
+      var listOfList = <List<MainDisplayNovel>>[];
+      for (var novelList in response.data['data']) {
+        var tempList = <MainDisplayNovel>[];
+        for (var novel in novelList) {
+          MainDisplayNovel temp = MainDisplayNovel.fromMap(novel);
+          tempList.add(temp);
+        }
+        listOfList.add(tempList);
+      }
+      return listOfList;
     }
     return null;
   }
