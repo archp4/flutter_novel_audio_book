@@ -28,7 +28,8 @@ class _HomepageState extends State<Homepage> {
   }
 
   getData() async {
-    list = await DioHome.requestHomePageDetails();
+    final dio = DioHome();
+    list = await dio.requestHomePageDetails();
     if (list != null) {
       setState(() => isLoading = false);
     }

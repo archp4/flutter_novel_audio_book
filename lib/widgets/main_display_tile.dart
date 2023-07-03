@@ -49,7 +49,7 @@ class MainDisplayTile extends StatelessWidget {
             Row(
               children: [
                 RatingBarIndicator(
-                  rating: double.parse(novel.bookRating),
+                  rating: toDouble(),
                   itemBuilder: (context, index) => const Icon(
                     Icons.star,
                     color: Colors.amber,
@@ -78,5 +78,14 @@ class MainDisplayTile extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  double toDouble() {
+    try {
+      return double.parse(novel.bookRating);
+    } catch (e) {
+      debugPrint(e.toString());
+    }
+    return 0;
   }
 }

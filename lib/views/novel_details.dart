@@ -1,6 +1,4 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'dart:js_interop';
-
 import 'package:flutter/material.dart';
 
 import 'package:novel_audiobook_version/models/chapter.dart';
@@ -29,8 +27,9 @@ class _NovelDetailViewState extends State<NovelDetailView> {
   bool showAll = false;
 
   getData() async {
-    novelDetail = await DioHome.requestNovelDetail(url: widget.novelURL);
-    if (!novelDetail.isNull) {
+    final dio = DioHome();
+    novelDetail = await dio.requestNovelDetail(url: widget.novelURL);
+    if (novelDetail != null) {
       chapterList = novelDetail!.chapterList.reversed.toList();
       initList = chapterList;
       setState(() => isLoaded = true);
@@ -62,68 +61,72 @@ class _NovelDetailViewState extends State<NovelDetailView> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: isLoaded
-          ? SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(20),
-                    child: NovelDetailCard(novelDetail: novelDetail),
-                  ),
-                  const SizedBox(height: 16),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 20),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          'Chapter List',
-                          style: Theme.of(context).textTheme.titleLarge,
-                        ),
-                        IconButton(
-                          onPressed: () {
-                            setState(() => isDescending = !isDescending);
-                            if (chapterList != null) {
-                              chapterList = chapterList!.reversed.toList();
-                            }
-                          },
-                          icon: const Icon(Icons.swap_vert),
-                        ),
-                      ],
+          ? SafeArea(
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(20),
+                      child: NovelDetailCard(novelDetail: novelDetail),
                     ),
-                  ),
-                  ListView.builder(
-                    physics: const NeverScrollableScrollPhysics(),
-                    shrinkWrap: true,
-                    itemCount: showAll ? chapterList!.length : getLength(),
-                    itemBuilder: (ctx, index) {
-                      return GestureDetector(
-                        onTap: () {
-                          PageNavigation.to(
-                            context,
-                            ReaderChapterView(
-                              chapterList: initList!,
-                              selectIndex: getIndex(index),
-                            ),
-                          );
+                    const SizedBox(height: 16),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 20),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            'Chapter List',
+                            style: Theme.of(context).textTheme.titleLarge,
+                          ),
+                          IconButton(
+                            onPressed: () {
+                              setState(() => isDescending = !isDescending);
+                              if (chapterList != null) {
+                                chapterList = chapterList!.reversed.toList();
+                              }
+                            },
+                            icon: const Icon(Icons.swap_vert),
+                          ),
+                        ],
+                      ),
+                    ),
+                    ListView.builder(
+                      physics: const NeverScrollableScrollPhysics(),
+                      shrinkWrap: true,
+                      itemCount: showAll ? chapterList!.length : getLength(),
+                      itemBuilder: (ctx, index) {
+                        return GestureDetector(
+                          onTap: () {
+                            PageNavigation.to(
+                              context,
+                              ReaderChapterView(
+                                chapterList: initList!,
+                                selectIndex: getIndex(index),
+                              ),
+                            );
+                          },
+                          child: ChapterTile(
+                            chapter: chapterList![index],
+                            index: index,
+                          ),
+                        );
+                      },
+                    ),
+                    Center(
+                      child: ElevatedButton(
+                        onPressed: () {
+                          setState(() {
+                            showAll = !showAll;
+                          });
                         },
-                        child: ChapterTile(
-                          chapter: chapterList![index],
-                          index: index,
-                        ),
-                      );
-                    },
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      setState(() {
-                        showAll = !showAll;
-                      });
-                    },
-                    child: const Text('Show All'),
-                  ),
-                ],
+                        child: const Text('Show All'),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             )
           : const Center(

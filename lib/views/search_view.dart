@@ -25,7 +25,8 @@ class _SearchViewState extends State<SearchView> {
   }
 
   getSearchResult(value) async {
-    tempList = await DioHome.searchNovel(url: value);
+    final dio = DioHome();
+    tempList = await dio.searchNovel(url: value);
     setState(
       () {
         if (tempList != null) {

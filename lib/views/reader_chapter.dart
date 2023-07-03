@@ -1,10 +1,9 @@
-import 'dart:js_interop';
-
 import 'package:flutter/material.dart';
 import 'package:novel_audiobook_version/models/chapter.dart';
 import 'package:novel_audiobook_version/models/const_value.dart';
 import 'package:novel_audiobook_version/models/reader_chapter.dart';
 import 'package:novel_audiobook_version/services/dio_home.dart';
+import 'package:novel_audiobook_version/widgets/audio_listener.dart';
 import 'package:novel_audiobook_version/widgets/reader_bottom_bar.dart';
 
 class ReaderChapterView extends StatefulWidget {
@@ -34,8 +33,9 @@ class _ReaderChpaterState extends State<ReaderChapterView> {
   }
 
   getData({required url}) async {
-    readerChapter = await DioHome.getReaderChpater(url: url);
-    if (!readerChapter.isNull) {
+    final dio = DioHome();
+    readerChapter = await dio.getReaderChpater(url: url);
+    if (readerChapter != null) {
       setState(() => isLoaded = true);
     }
   }
@@ -44,8 +44,19 @@ class _ReaderChpaterState extends State<ReaderChapterView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text(isLoaded ? readerChapter!.name : ""),
         automaticallyImplyLeading: false,
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () async {
+          await showDialog(
+            context: context,
+            builder: (_) => AudioBookDialog(
+                text: readerChapter!.data, imageURL: "imageURL"),
+          );
+        },
+        child: const Icon(Icons.book_online),
       ),
       drawer: Drawer(
         child: Stack(

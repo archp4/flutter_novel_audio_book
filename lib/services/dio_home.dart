@@ -1,6 +1,10 @@
 // ignore_for_file: non_constant_identifier_names
 
+import 'dart:io';
+
 import 'package:dio/dio.dart';
+import 'package:dio/io.dart';
+
 import 'package:novel_audiobook_version/models/display_novel.dart';
 import 'package:novel_audiobook_version/models/novel_detail.dart';
 import 'package:novel_audiobook_version/models/reader_chapter.dart';
@@ -15,9 +19,13 @@ class DioHome {
   static var readerChapter = '/chapter';
   static var homepage = '/homepage';
 
-  static final dio = Dio();
+  late Dio dio;
+  init() {
+    dio = Dio();
+  }
 
-  static Future<NovelDetail?> requestNovelDetail({required String url}) async {
+  Future<NovelDetail?> requestNovelDetail({required String url}) async {
+    fix();
     Response response;
     response = await dio.get('$urlX$novel_details?url=$url');
     if (response.statusCode == 200) {
@@ -27,7 +35,8 @@ class DioHome {
     return null;
   }
 
-  static Future<List<DisplayNovel>?> requestLastestUpdate() async {
+  Future<List<DisplayNovel>?> requestLastestUpdate() async {
+    fix();
     Response response = await dio.get('$urlX$lastest_chapters');
     if (response.statusCode == 200) {
       var tempList = <DisplayNovel>[];
@@ -39,7 +48,8 @@ class DioHome {
     return null;
   }
 
-  static Future<List<DisplayNovel>?> requestPopularNovel() async {
+  Future<List<DisplayNovel>?> requestPopularNovel() async {
+    fix();
     Response response = await dio.get('$urlX$popular_novel');
     if (response.statusCode == 200) {
       var tempList = <DisplayNovel>[];
@@ -52,8 +62,8 @@ class DioHome {
     return null;
   }
 
-  static Future<List<MainDisplayNovel>?> searchNovel(
-      {required String url}) async {
+  Future<List<MainDisplayNovel>?> searchNovel({required String url}) async {
+    fix();
     Response response = await dio.get('$urlX$searchUrl?query=$url');
     if (response.statusCode == 200) {
       var tempList = <MainDisplayNovel>[];
@@ -66,7 +76,8 @@ class DioHome {
     return null;
   }
 
-  static Future<ReaderChapter?> getReaderChpater({required String url}) async {
+  Future<ReaderChapter?> getReaderChpater({required String url}) async {
+    fix();
     Response response;
     response = await dio.get('$urlX$readerChapter?url=$url');
     if (response.statusCode == 200) {
@@ -76,7 +87,19 @@ class DioHome {
     return null;
   }
 
-  static Future<List<List<MainDisplayNovel>>?> requestHomePageDetails() async {
+  fix() {
+    init();
+    (dio.httpClientAdapter as DefaultHttpClientAdapter).onHttpClientCreate =
+        (HttpClient client) {
+      client.badCertificateCallback =
+          (X509Certificate cert, String host, int port) => true;
+      return client;
+    };
+  }
+
+  Future<List<List<MainDisplayNovel>>?> requestHomePageDetails() async {
+    fix();
+
     Response response;
     final url = '$urlX$homepage';
     response = await dio.get(url);
@@ -93,5 +116,9 @@ class DioHome {
       return listOfList;
     }
     return null;
+  }
+
+  void dispose() {
+    dio.close();
   }
 }
