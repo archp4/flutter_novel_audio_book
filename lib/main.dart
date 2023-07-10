@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:novel_audiobook_version/uitilites/scroll.dart';
+import 'package:novel_audiobook_version/utilities/scroll.dart';
 import 'package:novel_audiobook_version/views/homepage.dart';
 
 void main() {
