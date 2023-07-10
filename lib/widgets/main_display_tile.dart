@@ -1,10 +1,9 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:novel_audiobook_version/models/page_navigatior.dart';
-
 import 'package:novel_audiobook_version/models/search_display_novel.dart';
 import 'package:novel_audiobook_version/views/novel_details.dart';
+import 'package:novel_audiobook_version/widgets/book_rating.dart';
 
 class MainDisplayTile extends StatelessWidget {
   final MainDisplayNovel novel;
@@ -46,24 +45,7 @@ class MainDisplayTile extends StatelessWidget {
               maxLines: 2,
             ),
             const SizedBox(height: 5),
-            Row(
-              children: [
-                RatingBarIndicator(
-                  rating: toDouble(),
-                  itemBuilder: (context, index) => const Icon(
-                    Icons.star,
-                    color: Colors.amber,
-                  ),
-                  itemCount: 5,
-                  itemSize: 12,
-                  direction: Axis.horizontal,
-                ),
-                Text(
-                  " (${novel.bookRating})",
-                  style: Theme.of(context).textTheme.labelSmall,
-                ),
-              ],
-            ),
+            BookRating(bookRating: novel.bookRating),
             const SizedBox(height: 5),
             Text(
               novel.lastChapterTime,
@@ -78,14 +60,5 @@ class MainDisplayTile extends StatelessWidget {
         ),
       ),
     );
-  }
-
-  double toDouble() {
-    try {
-      return double.parse(novel.bookRating);
-    } catch (e) {
-      debugPrint(e.toString());
-    }
-    return 0;
   }
 }

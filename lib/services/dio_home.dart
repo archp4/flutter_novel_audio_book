@@ -6,7 +6,9 @@ import 'package:dio/dio.dart';
 import 'package:dio/io.dart';
 
 import 'package:novel_audiobook_version/models/display_novel.dart';
+import 'package:novel_audiobook_version/models/homepage.dart';
 import 'package:novel_audiobook_version/models/novel_detail.dart';
+import 'package:novel_audiobook_version/models/popular_novels.dart';
 import 'package:novel_audiobook_version/models/reader_chapter.dart';
 import 'package:novel_audiobook_version/models/search_display_novel.dart';
 
@@ -87,17 +89,7 @@ class DioHome {
     return null;
   }
 
-  fix() {
-    init();
-    (dio.httpClientAdapter as DefaultHttpClientAdapter).onHttpClientCreate =
-        (HttpClient client) {
-      client.badCertificateCallback =
-          (X509Certificate cert, String host, int port) => true;
-      return client;
-    };
-  }
-
-  Future<List<List<MainDisplayNovel>>?> requestHomePageDetails() async {
+  Future<HomepageData?> requestHomePageDetails() async {
     fix();
 
     Response response;
@@ -113,9 +105,27 @@ class DioHome {
         }
         listOfList.add(tempList);
       }
-      return listOfList;
+      var listPopularNovel = <PopularNovels>[];
+      for (var novel in response.data['popular']) {
+        PopularNovels temp = PopularNovels.fromMap(novel);
+        listPopularNovel.add(temp);
+      }
+      return HomepageData(
+        listOfNovels: listOfList,
+        listPopularNovel: listPopularNovel,
+      );
     }
     return null;
+  }
+
+  fix() {
+    init();
+    (dio.httpClientAdapter as DefaultHttpClientAdapter).onHttpClientCreate =
+        (HttpClient client) {
+      client.badCertificateCallback =
+          (X509Certificate cert, String host, int port) => true;
+      return client;
+    };
   }
 
   void dispose() {

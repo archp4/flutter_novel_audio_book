@@ -1,13 +1,15 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:novel_audiobook_version/models/const_value.dart';
-import 'package:novel_audiobook_version/models/display_novel.dart';
+import 'package:novel_audiobook_version/models/homepage.dart';
 import 'package:novel_audiobook_version/models/page_navigatior.dart';
 import 'package:novel_audiobook_version/models/search_display_novel.dart';
 import 'package:novel_audiobook_version/services/dio_home.dart';
+import 'package:novel_audiobook_version/utilities/greeting.dart';
 import 'package:novel_audiobook_version/views/search_view.dart';
 import 'package:novel_audiobook_version/widgets/display_home_novel_tile.dart';
 import 'package:novel_audiobook_version/widgets/main_display_tile.dart';
+import 'package:novel_audiobook_version/widgets/slider.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -17,8 +19,7 @@ class Homepage extends StatefulWidget {
 }
 
 class _HomepageState extends State<Homepage> {
-  List<DisplayNovel>? popularList;
-  List<List<MainDisplayNovel>>? list;
+  HomepageData? homepage;
   bool isLoading = true;
 
   @override
@@ -29,14 +30,10 @@ class _HomepageState extends State<Homepage> {
 
   getData() async {
     final dio = DioHome();
-    list = await dio.requestHomePageDetails();
-    if (list != null) {
+    homepage = await dio.requestHomePageDetails();
+    if (homepage != null) {
       setState(() => isLoading = false);
     }
-  }
-
-  String getGreeting() {
-    return "Good Morning,";
   }
 
   @override
@@ -78,13 +75,32 @@ class _HomepageState extends State<Homepage> {
                       'Popular Novels',
                       style: Theme.of(context).textTheme.titleLarge,
                     ),
+                    PopularCarouselSlider(novels: homepage!.listPopularNovel),
                     const SizedBox(height: 16),
-                    DisplayNovels(title: 'Lastest Updates', novels: list![0]),
-                    DisplayNovels(title: 'Completed', novels: list![1]),
-                    DisplayNovels(title: 'Romance', novels: list![2]),
-                    DisplayNovels(title: 'Fantasy', novels: list![3]),
-                    DisplayNovels(title: 'Drama', novels: list![4]),
-                    DisplayNovels(title: 'Action', novels: list![5]),
+                    DisplayNovels(
+                      title: 'Lastest Updates',
+                      novels: homepage!.listOfNovels[0],
+                    ),
+                    DisplayNovels(
+                      title: 'Completed',
+                      novels: homepage!.listOfNovels[1],
+                    ),
+                    DisplayNovels(
+                      title: 'Romance',
+                      novels: homepage!.listOfNovels[2],
+                    ),
+                    DisplayNovels(
+                      title: 'Fantasy',
+                      novels: homepage!.listOfNovels[3],
+                    ),
+                    DisplayNovels(
+                      title: 'Drama',
+                      novels: homepage!.listOfNovels[4],
+                    ),
+                    DisplayNovels(
+                      title: 'Action',
+                      novels: homepage!.listOfNovels[5],
+                    ),
                     // getScrollableList(list: popularList!),
                   ],
                 ),
