@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:novel_audiobook_version/models/chapter.dart';
+import 'package:novel_audiobook_version/models/const_value.dart';
 import 'package:novel_audiobook_version/models/novel_detail.dart';
 import 'package:novel_audiobook_version/models/page_navigatior.dart';
 import 'package:novel_audiobook_version/services/dio_home.dart';
@@ -60,6 +61,17 @@ class _NovelDetailViewState extends State<NovelDetailView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Novel Details'),
+        centerTitle: true,
+        automaticallyImplyLeading: false,
+        leading: GestureDetector(
+          child: const Padding(
+            padding: EdgeInsets.only(left: ConstantValue.defaultPadding),
+            child: Icon(Icons.arrow_back_ios),
+          ),
+        ),
+      ),
       body: isLoaded
           ? SafeArea(
               child: SingleChildScrollView(
@@ -105,6 +117,7 @@ class _NovelDetailViewState extends State<NovelDetailView> {
                               ReaderChapterView(
                                 chapterList: initList!,
                                 selectIndex: getIndex(index),
+                                imageURL: novelDetail!.imgSrc,
                               ),
                             );
                           },

@@ -42,6 +42,8 @@ dependencies:
   fast_cached_network_image: ^1.2.0
   audioplayers: ^4.1.0
   permission_handler: ^10.4.1
+  path_provider: ^2.0.15
+  collection: ^1.17.1
 
 dev_dependencies:
   flutter_test:

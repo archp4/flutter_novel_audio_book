@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:novel_audiobook_version/models/chapter.dart';
 import 'package:novel_audiobook_version/models/const_value.dart';
+import 'package:novel_audiobook_version/models/page_navigatior.dart';
 import 'package:novel_audiobook_version/models/reader_chapter.dart';
 import 'package:novel_audiobook_version/services/dio_home.dart';
 import 'package:novel_audiobook_version/widgets/audio_listener.dart';
@@ -9,10 +10,12 @@ import 'package:novel_audiobook_version/widgets/reader_bottom_bar.dart';
 class ReaderChapterView extends StatefulWidget {
   final List<Chapter> chapterList;
   final int selectIndex;
+  final String imageURL;
   @override
   const ReaderChapterView({
     required this.chapterList,
     required this.selectIndex,
+    required this.imageURL,
     super.key,
   });
 
@@ -47,13 +50,23 @@ class _ReaderChpaterState extends State<ReaderChapterView> {
         centerTitle: true,
         title: Text(isLoaded ? readerChapter!.name : ""),
         automaticallyImplyLeading: false,
+        leading: GestureDetector(
+          onTap: () => PageNavigation.pop(context),
+          child: const Padding(
+            padding: EdgeInsets.only(left: ConstantValue.defaultPadding / 2),
+            child: Icon(Icons.arrow_back_ios),
+          ),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
           await showDialog(
             context: context,
             builder: (_) => AudioBookDialog(
-                text: readerChapter!.data, imageURL: "imageURL"),
+              text: readerChapter!.data,
+              imageURL: widget.imageURL,
+              title: readerChapter!.name,
+            ),
           );
         },
         child: const Icon(Icons.book_online),
