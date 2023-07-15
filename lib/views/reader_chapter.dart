@@ -5,7 +5,9 @@ import 'package:novel_audiobook_version/models/page_navigatior.dart';
 import 'package:novel_audiobook_version/models/reader_chapter.dart';
 import 'package:novel_audiobook_version/services/dio_home.dart';
 import 'package:novel_audiobook_version/widgets/audio_listener.dart';
-import 'package:novel_audiobook_version/widgets/reader_bottom_bar.dart';
+import 'package:novel_audiobook_version/widgets/setting_drawer.dart';
+import 'package:novel_audiobook_version/widgets/reader_bar.dart';
+import 'package:novel_audiobook_version/widgets/reader_container.dart';
 
 class ReaderChapterView extends StatefulWidget {
   final List<Chapter> chapterList;
@@ -27,6 +29,7 @@ class _ReaderChpaterState extends State<ReaderChapterView> {
   int? selectIndex;
   ReaderChapter? readerChapter;
   bool isLoaded = false;
+  bool isSettings = false;
 
   @override
   void initState() {
@@ -43,9 +46,33 @@ class _ReaderChpaterState extends State<ReaderChapterView> {
     }
   }
 
+  openDrawer() {
+    // create fuction due to repeat use
+    if (scaffoldKey.currentState!.isDrawerOpen) {
+      scaffoldKey.currentState!.closeDrawer();
+    } else {
+      scaffoldKey.currentState!.openDrawer();
+    }
+  }
+
+  List<Widget> childrenListTile() {
+    return List.generate(widget.chapterList.length, (index) {
+      return ListTile(
+        onTap: () {
+          if (selectIndex != null) setState(() => selectIndex = index);
+          openDrawer(); // closing drawer after selcting chapter
+        },
+        title: Text(widget.chapterList[index].name),
+      );
+    });
+  }
+
+  final scaffoldKey = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
+    List<Widget> children = childrenListTile();
     return Scaffold(
+      key: scaffoldKey,
       appBar: AppBar(
         centerTitle: true,
         title: Text(isLoaded ? readerChapter!.name : ""),
@@ -58,24 +85,11 @@ class _ReaderChpaterState extends State<ReaderChapterView> {
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () async {
-          await showDialog(
-            context: context,
-            builder: (_) => AudioBookDialog(
-              text: readerChapter!.data,
-              imageURL: widget.imageURL,
-              title: readerChapter!.name,
-            ),
-          );
-        },
-        child: const Icon(Icons.book_online),
-      ),
       drawer: Drawer(
         child: Stack(
           children: [
-            Container(),
-            Container(),
+            ListView(children: children),
+            const SettingDrawers(),
           ],
         ),
       ),
@@ -84,34 +98,42 @@ class _ReaderChpaterState extends State<ReaderChapterView> {
           height: MediaQuery.of(context).size.height,
           child: Stack(
             children: [
-              Padding(
-                padding: const EdgeInsets.all(ConstantValue.defaultPadding),
-                child: SingleChildScrollView(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      isLoaded
-                          ? Text(
-                              readerChapter!.data,
-                              style: Theme.of(context).textTheme.bodyMedium,
-                              textAlign: TextAlign.justify,
-                            )
-                          : Container(
-                              height: MediaQuery.of(context).size.height,
-                              alignment: Alignment.center,
-                              child: const CircularProgressIndicator(),
-                            ),
-                      const SizedBox(height: ConstantValue.defaultPadding * 3)
-                    ],
-                  ),
-                ),
+              ReaderContainer(
+                isLoaded: isLoaded,
+                readerChapter: readerChapter ??
+                    ReaderChapter(
+                      name: "",
+                      data: "data",
+                    ),
               ),
               Positioned(
                 bottom: 0,
                 height: ConstantValue.defaultPadding * 3,
-                child: ReaderBottombar(
+                child: ReaderBar(
                   chapterList: widget.chapterList,
                   selectIndex: selectIndex!,
+                  onAudioBook: () async {
+                    await showDialog(
+                      context: context,
+                      builder: (_) => AudioBookDialog(
+                        text: readerChapter!.data,
+                        imageURL: widget.imageURL,
+                        title: readerChapter!.name,
+                      ),
+                    );
+                  },
+                  onChapterList: () {
+                    if (isSettings) {
+                      setState(() => isSettings = false);
+                    }
+                    openDrawer();
+                  },
+                  onSettings: () {
+                    if (!isSettings) {
+                      setState(() => isSettings = true);
+                    }
+                    openDrawer();
+                  },
                   onNext: () async {
                     selectIndex = selectIndex! + 1;
                     setState(() => isLoaded = false);

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:novel_audiobook_version/models/const_value.dart';
 import 'package:novel_audiobook_version/models/popular_novels.dart';
 import 'package:novel_audiobook_version/widgets/book_rating.dart';
 
@@ -10,24 +11,42 @@ class CarouselTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
-        color: Theme.of(context).scaffoldBackgroundColor,
+        borderRadius: const BorderRadius.all(Radius.circular(5)),
+        color: Theme.of(context).highlightColor,
       ),
       child: Row(
         children: [
-          Expanded(
-            flex: 4,
-            child: Image.network(popularNovel.imgSrc),
+          ClipRRect(
+            borderRadius: const BorderRadius.only(
+              topLeft: Radius.circular(5.0),
+              bottomLeft: Radius.circular(5.0),
+            ),
+            child: Image.network(
+              popularNovel.imgSrc,
+              height: 170,
+              fit: BoxFit.cover,
+            ),
+          ),
+          const SizedBox(
+            width: ConstantValue.defaultPadding * .4,
           ),
           Expanded(
-            flex: 6,
+            flex: 5,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.start,
-              mainAxisSize: MainAxisSize.min,
               children: [
-                Text(popularNovel.name),
-                Text(popularNovel.totalRead),
+                const SizedBox(height: ConstantValue.defaultPadding * .3),
+                Text(
+                  popularNovel.name,
+                  style: Theme.of(context).textTheme.bodyMedium,
+                ),
+                const SizedBox(height: ConstantValue.defaultPadding * .5),
+                Text(
+                  "Views : ${popularNovel.totalRead}",
+                  style: Theme.of(context).textTheme.bodySmall,
+                ),
+                const SizedBox(height: ConstantValue.defaultPadding * .2),
                 BookRating(bookRating: popularNovel.bookRating),
               ],
             ),
