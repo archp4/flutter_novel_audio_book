@@ -59,7 +59,7 @@ class ReaderBar extends StatelessWidget {
             onPressed: onNext,
             icon: Icon(
               Icons.arrow_forward_ios,
-              color: selectIndex < chapterList.length
+              color: selectIndex < chapterList.length - 1
                   ? Colors.white
                   : Colors.white12,
             ),

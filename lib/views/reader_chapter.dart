@@ -86,11 +86,16 @@ class _ReaderChpaterState extends State<ReaderChapterView> {
         ),
       ),
       drawer: Drawer(
-        child: Stack(
-          children: [
-            ListView(children: children),
-            const SettingDrawers(),
-          ],
+        child: SafeArea(
+          child: Stack(
+            children: [
+              Container(
+                color: Theme.of(context).scaffoldBackgroundColor,
+                child: ListView(children: children),
+              ),
+              if (isSettings) const SettingDrawers(),
+            ],
+          ),
         ),
       ),
       body: SafeArea(

@@ -5,7 +5,6 @@ import 'package:novel_audiobook_version/models/homepage.dart';
 import 'package:novel_audiobook_version/models/page_navigatior.dart';
 import 'package:novel_audiobook_version/models/search_display_novel.dart';
 import 'package:novel_audiobook_version/services/dio_home.dart';
-import 'package:novel_audiobook_version/utilities/greeting.dart';
 import 'package:novel_audiobook_version/views/search_view.dart';
 import 'package:novel_audiobook_version/widgets/display_home_novel_tile.dart';
 import 'package:novel_audiobook_version/widgets/main_display_tile.dart';
@@ -54,7 +53,6 @@ class _HomepageState extends State<Homepage> {
         body: Container(
           margin: const EdgeInsets.only(
             left: ConstantValue.defaultPadding,
-            top: ConstantValue.defaultPadding,
           ),
           decoration: const BoxDecoration(),
           child: isLoading
@@ -63,18 +61,20 @@ class _HomepageState extends State<Homepage> {
                 )
               : ListView(
                   children: [
-                    Text(
-                      getGreeting(),
-                      style: Theme.of(context).textTheme.headlineLarge,
-                    ),
-                    Text(
-                      "User",
-                      style: Theme.of(context).textTheme.headlineLarge,
-                    ),
+                    // Text(
+                    //   getGreeting(),
+                    //   style: Theme.of(context).textTheme.headlineLarge,
+                    // ),
+                    // Text(
+                    //   "User",
+                    //   style: Theme.of(context).textTheme.headlineLarge,
+                    // ),
+
                     Text(
                       'Popular Novels',
                       style: Theme.of(context).textTheme.titleLarge,
                     ),
+                    const SizedBox(height: 16),
                     PopularCarouselSlider(novels: homepage!.listPopularNovel),
                     const SizedBox(height: 16),
                     DisplayNovels(

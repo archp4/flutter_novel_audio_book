@@ -7,6 +7,8 @@ import 'package:novel_audiobook_version/models/novel_detail.dart';
 import 'package:novel_audiobook_version/models/page_navigatior.dart';
 import 'package:novel_audiobook_version/services/dio_home.dart';
 import 'package:novel_audiobook_version/views/reader_chapter.dart';
+import 'package:novel_audiobook_version/widgets/chapter_tile.dart';
+import 'package:novel_audiobook_version/widgets/novel_detail_card.dart';
 
 class NovelDetailView extends StatefulWidget {
   final String novelURL;
@@ -25,7 +27,8 @@ class _NovelDetailViewState extends State<NovelDetailView> {
   List<Chapter>? initList;
   List<Chapter>? chapterList;
   bool isDescending = false;
-  bool showAll = false;
+  bool showAll = true;
+  int length = 0;
 
   getData() async {
     final dio = DioHome();
@@ -33,15 +36,13 @@ class _NovelDetailViewState extends State<NovelDetailView> {
     if (novelDetail != null) {
       chapterList = novelDetail!.chapterList.reversed.toList();
       initList = chapterList;
+      length = getLength();
       setState(() => isLoaded = true);
     }
   }
 
   int getLength() {
-    if (chapterList!.length < 10) {
-      return chapterList!.length;
-    }
-    return 10;
+    return chapterList!.length;
   }
 
   getIndex(int index) {
@@ -50,6 +51,23 @@ class _NovelDetailViewState extends State<NovelDetailView> {
     }
 
     return index;
+  }
+
+  adjustLength() {
+    if (length + 100 < getLength()) {
+      length = length + 100;
+    } else {
+      length = getLength();
+    }
+    if (!showAll) length = 10;
+  }
+
+  adjustShowButton() {
+    if (length == getLength()) {
+      showAll = false;
+    } else {
+      showAll = true;
+    }
   }
 
   @override
@@ -64,11 +82,15 @@ class _NovelDetailViewState extends State<NovelDetailView> {
       appBar: AppBar(
         title: const Text('Novel Details'),
         centerTitle: true,
+        elevation: 0,
         automaticallyImplyLeading: false,
         leading: GestureDetector(
-          child: const Padding(
-            padding: EdgeInsets.only(left: ConstantValue.defaultPadding),
-            child: Icon(Icons.arrow_back_ios),
+          child: Padding(
+            padding: const EdgeInsets.only(left: ConstantValue.defaultPadding),
+            child: IconButton(
+              onPressed: () => Navigator.pop(context),
+              icon: const Icon(Icons.arrow_back_ios),
+            ),
           ),
         ),
       ),
@@ -108,7 +130,7 @@ class _NovelDetailViewState extends State<NovelDetailView> {
                     ListView.builder(
                       physics: const NeverScrollableScrollPhysics(),
                       shrinkWrap: true,
-                      itemCount: showAll ? chapterList!.length : getLength(),
+                      itemCount: length,
                       itemBuilder: (ctx, index) {
                         return GestureDetector(
                           onTap: () {
@@ -128,16 +150,18 @@ class _NovelDetailViewState extends State<NovelDetailView> {
                         );
                       },
                     ),
-                    Center(
-                      child: ElevatedButton(
-                        onPressed: () {
-                          setState(() {
-                            showAll = !showAll;
-                          });
-                        },
-                        child: const Text('Show All'),
-                      ),
-                    ),
+                    const SizedBox(height: 40),
+                    // Center(
+                    //   child: SizedBox(
+                    //     width: MediaQuery.of(context).size.width - 20,
+                    //     child: ElevatedButton(
+                    //       onPressed: () {
+                    //         setState(() {});
+                    //       },
+                    //       child: Text(showAll ? 'Show More' : 'Show Less'),
+                    //     ),
+                    //   ),
+                    // ),
                   ],
                 ),
               ),
@@ -145,93 +169,6 @@ class _NovelDetailViewState extends State<NovelDetailView> {
           : const Center(
               child: CircularProgressIndicator(),
             ),
-    );
-  }
-}
-
-class NovelDetailCard extends StatelessWidget {
-  const NovelDetailCard({
-    super.key,
-    required this.novelDetail,
-  });
-
-  final NovelDetail? novelDetail;
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        SizedBox(
-          width: 150,
-          height: 200,
-          child: Container(
-            decoration: const BoxDecoration(color: Colors.transparent),
-            child: Image.network(
-              novelDetail!.imgSrc,
-              fit: BoxFit.cover,
-              errorBuilder: (_, object, error) =>
-                  Container(color: Colors.amber),
-            ),
-          ),
-        ),
-        Expanded(
-          child: Container(
-            margin: const EdgeInsets.only(left: 20),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  novelDetail!.name,
-                  style: Theme.of(context).textTheme.titleLarge,
-                  textAlign: TextAlign.left,
-                  maxLines: 2,
-                ),
-                const SizedBox(height: 16),
-                Text(
-                  novelDetail!.descrption,
-                  style: Theme.of(context).textTheme.bodySmall,
-                  textAlign: TextAlign.justify,
-
-                  // overflow: TextOverflow.ellipsis,
-                  // softWrap: true,
-                ),
-              ],
-            ),
-          ),
-        )
-      ],
-    );
-  }
-}
-
-class ChapterTile extends StatelessWidget {
-  final Chapter chapter;
-  final int index;
-  const ChapterTile({
-    Key? key,
-    required this.chapter,
-    required this.index,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-      decoration: BoxDecoration(
-        border: Border.all(
-          color: Colors.grey,
-          width: 1,
-          style: BorderStyle.solid,
-        ),
-        borderRadius: BorderRadius.circular(25),
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [Text(chapter.name), const Icon(Icons.arrow_right)],
-      ),
     );
   }
 }
