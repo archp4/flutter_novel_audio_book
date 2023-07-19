@@ -3,11 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:novel_audiobook_version/models/const_value.dart';
 import 'package:novel_audiobook_version/models/homepage.dart';
 import 'package:novel_audiobook_version/models/page_navigatior.dart';
-import 'package:novel_audiobook_version/models/search_display_novel.dart';
 import 'package:novel_audiobook_version/services/dio_home.dart';
 import 'package:novel_audiobook_version/views/search_view.dart';
-import 'package:novel_audiobook_version/widgets/display_home_novel_tile.dart';
-import 'package:novel_audiobook_version/widgets/main_display_tile.dart';
+import 'package:novel_audiobook_version/widgets/display_novels.dart';
 import 'package:novel_audiobook_version/widgets/slider.dart';
 
 class Homepage extends StatefulWidget {
@@ -61,15 +59,6 @@ class _HomepageState extends State<Homepage> {
                 )
               : ListView(
                   children: [
-                    // Text(
-                    //   getGreeting(),
-                    //   style: Theme.of(context).textTheme.headlineLarge,
-                    // ),
-                    // Text(
-                    //   "User",
-                    //   style: Theme.of(context).textTheme.headlineLarge,
-                    // ),
-
                     Text(
                       'Popular Novels',
                       style: Theme.of(context).textTheme.titleLarge,
@@ -108,47 +97,4 @@ class _HomepageState extends State<Homepage> {
       ),
     );
   }
-}
-
-class DisplayNovels extends StatelessWidget {
-  const DisplayNovels({
-    super.key,
-    required this.title,
-    required this.novels,
-  });
-
-  final String title;
-  final List<MainDisplayNovel> novels;
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Text(
-          title,
-          style: Theme.of(context).textTheme.titleLarge,
-        ),
-        const SizedBox(height: 16),
-        SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
-            children: [for (var novel in novels) MainDisplayTile(novel: novel)],
-          ),
-        ),
-      ],
-    );
-  }
-}
-
-Widget getScrollableList({required List list}) {
-  return SingleChildScrollView(
-    scrollDirection: Axis.horizontal,
-    child: Row(
-      children: [
-        for (var novel in list) DisplayHomeNovelTile(displayNovel: novel)
-      ],
-    ),
-  );
 }

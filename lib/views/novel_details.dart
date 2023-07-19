@@ -6,6 +6,8 @@ import 'package:novel_audiobook_version/models/const_value.dart';
 import 'package:novel_audiobook_version/models/novel_detail.dart';
 import 'package:novel_audiobook_version/models/page_navigatior.dart';
 import 'package:novel_audiobook_version/services/dio_home.dart';
+import 'package:novel_audiobook_version/utilities/get_index.dart';
+import 'package:novel_audiobook_version/utilities/get_length.dart';
 import 'package:novel_audiobook_version/views/reader_chapter.dart';
 import 'package:novel_audiobook_version/widgets/chapter_tile.dart';
 import 'package:novel_audiobook_version/widgets/novel_detail_card.dart';
@@ -36,37 +38,8 @@ class _NovelDetailViewState extends State<NovelDetailView> {
     if (novelDetail != null) {
       chapterList = novelDetail!.chapterList.reversed.toList();
       initList = chapterList;
-      length = getLength();
+      length = getLength(list: chapterList!);
       setState(() => isLoaded = true);
-    }
-  }
-
-  int getLength() {
-    return chapterList!.length;
-  }
-
-  getIndex(int index) {
-    if (isDescending) {
-      return initList!.length - index - 1;
-    }
-
-    return index;
-  }
-
-  adjustLength() {
-    if (length + 100 < getLength()) {
-      length = length + 100;
-    } else {
-      length = getLength();
-    }
-    if (!showAll) length = 10;
-  }
-
-  adjustShowButton() {
-    if (length == getLength()) {
-      showAll = false;
-    } else {
-      showAll = true;
     }
   }
 
@@ -138,7 +111,11 @@ class _NovelDetailViewState extends State<NovelDetailView> {
                               context,
                               ReaderChapterView(
                                 chapterList: initList!,
-                                selectIndex: getIndex(index),
+                                selectIndex: getIndex(
+                                  length: getLength(list: initList!),
+                                  index: index,
+                                  isDescending: isDescending,
+                                ),
                                 imageURL: novelDetail!.imgSrc,
                               ),
                             );

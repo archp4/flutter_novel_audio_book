@@ -3,7 +3,9 @@ import 'package:novel_audiobook_version/models/chapter.dart';
 import 'package:novel_audiobook_version/models/const_value.dart';
 import 'package:novel_audiobook_version/models/page_navigatior.dart';
 import 'package:novel_audiobook_version/models/reader_chapter.dart';
+import 'package:novel_audiobook_version/models/type_of_fonts.dart';
 import 'package:novel_audiobook_version/services/dio_home.dart';
+import 'package:novel_audiobook_version/utilities/open_drawer.dart';
 import 'package:novel_audiobook_version/widgets/audio_listener.dart';
 import 'package:novel_audiobook_version/widgets/setting_drawer.dart';
 import 'package:novel_audiobook_version/widgets/reader_bar.dart';
@@ -30,6 +32,8 @@ class _ReaderChpaterState extends State<ReaderChapterView> {
   ReaderChapter? readerChapter;
   bool isLoaded = false;
   bool isSettings = false;
+  TypeOfFonts fontType = TypeOfFonts.defaultMain;
+  int fontSize = 12;
 
   @override
   void initState() {
@@ -46,21 +50,13 @@ class _ReaderChpaterState extends State<ReaderChapterView> {
     }
   }
 
-  openDrawer() {
-    // create fuction due to repeat use
-    if (scaffoldKey.currentState!.isDrawerOpen) {
-      scaffoldKey.currentState!.closeDrawer();
-    } else {
-      scaffoldKey.currentState!.openDrawer();
-    }
-  }
-
   List<Widget> childrenListTile() {
     return List.generate(widget.chapterList.length, (index) {
       return ListTile(
         onTap: () {
           if (selectIndex != null) setState(() => selectIndex = index);
-          openDrawer(); // closing drawer after selcting chapter
+          // closing drawer after selcting chapter
+          openDrawer(scaffoldKey: scaffoldKey);
         },
         title: Text(widget.chapterList[index].name),
       );
@@ -105,6 +101,8 @@ class _ReaderChpaterState extends State<ReaderChapterView> {
             children: [
               ReaderContainer(
                 isLoaded: isLoaded,
+                fontSize: fontSize,
+                typeOfFonts: fontType,
                 readerChapter: readerChapter ??
                     ReaderChapter(
                       name: "",
@@ -131,13 +129,13 @@ class _ReaderChpaterState extends State<ReaderChapterView> {
                     if (isSettings) {
                       setState(() => isSettings = false);
                     }
-                    openDrawer();
+                    openDrawer(scaffoldKey: scaffoldKey);
                   },
                   onSettings: () {
                     if (!isSettings) {
                       setState(() => isSettings = true);
                     }
-                    openDrawer();
+                    openDrawer(scaffoldKey: scaffoldKey);
                   },
                   onNext: () async {
                     selectIndex = selectIndex! + 1;
