@@ -19,7 +19,7 @@ class DisplayNovels extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         Text(
-          title,
+          novels.isEmpty ? "" : title,
           style: Theme.of(context).textTheme.titleLarge,
         ),
         const SizedBox(height: 16),

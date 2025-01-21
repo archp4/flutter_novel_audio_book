@@ -19,14 +19,14 @@ class MainDisplayTile extends StatelessWidget {
       child: Container(
         margin: const EdgeInsets.only(right: 10),
         width: 150,
-        height: 300,
+        height: 307,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(
               width: 150,
-              height: 200,
+              height: 205,
               child: Container(
                 decoration: const BoxDecoration(color: Colors.transparent),
                 child: Image.network(
@@ -54,7 +54,7 @@ class MainDisplayTile extends StatelessWidget {
                   .labelSmall!
                   .copyWith(fontWeight: FontWeight.normal),
               textAlign: TextAlign.left,
-              maxLines: 2,
+              maxLines: 3,
             ),
           ],
         ),

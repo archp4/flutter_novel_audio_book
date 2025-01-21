@@ -13,7 +13,7 @@ import 'package:novel_audiobook_version/models/reader_chapter.dart';
 import 'package:novel_audiobook_version/models/search_display_novel.dart';
 
 class DioHome {
-  static const urlX = "https://novel-python-api-flutter.onrender.com/";
+  static const urlX = "https://novel-python-api-flutter.onrender.com";
   // static const urlX = 'https://novel_python_api-1-h3046701.deta.app';
   static var novel_details = '/novel_detail';
   static var lastest_chapters = '/new_update';
@@ -92,10 +92,11 @@ class DioHome {
 
   Future<HomepageData?> requestHomePageDetails() async {
     fix();
-
+    print("HomeDio");
     Response response;
     final url = '$urlX$homepage';
     response = await dio.get(url);
+    print(response);
     if (response.statusCode == 200) {
       var listOfList = <List<MainDisplayNovel>>[];
       for (var novelList in response.data['data']) {
@@ -111,6 +112,7 @@ class DioHome {
         PopularNovels temp = PopularNovels.fromMap(novel);
         listPopularNovel.add(temp);
       }
+
       return HomepageData(
         listOfNovels: listOfList,
         listPopularNovel: listPopularNovel,

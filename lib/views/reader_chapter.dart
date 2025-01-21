@@ -116,14 +116,19 @@ class _ReaderChpaterState extends State<ReaderChapterView> {
                   chapterList: widget.chapterList,
                   selectIndex: selectIndex!,
                   onAudioBook: () async {
-                    await showDialog(
-                      context: context,
-                      builder: (_) => AudioBookDialog(
-                        text: readerChapter!.data,
-                        imageURL: widget.imageURL,
-                        title: readerChapter!.name,
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                        content: Text("Currently Is Disable By Devloperment"),
                       ),
                     );
+                    // await showDialog(
+                    //   context: context,
+                    //   builder: (_) => AudioBookDialog(
+                    //     text: readerChapter!.data,
+                    //     imageURL: widget.imageURL,
+                    //     title: readerChapter!.name,
+                    //   ),
+                    // );
                   },
                   onChapterList: () {
                     if (isSettings) {

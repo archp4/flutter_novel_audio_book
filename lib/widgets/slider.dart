@@ -14,7 +14,7 @@ class PopularCarouselSlider extends StatefulWidget {
 
 class _PopularCarouselSliderState extends State<PopularCarouselSlider> {
   int _current = 0;
-  final _controller = CarouselControllerImpl();
+
   @override
   Widget build(BuildContext context) {
     List<Widget> children = List.generate(widget.novels.length,
@@ -23,7 +23,6 @@ class _PopularCarouselSliderState extends State<PopularCarouselSlider> {
       children: [
         CarouselSlider(
           items: children,
-          carouselController: _controller,
           options: CarouselOptions(
             height: 170,
             initialPage: 0,
@@ -43,7 +42,6 @@ class _PopularCarouselSliderState extends State<PopularCarouselSlider> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: widget.novels.asMap().entries.map((entry) {
             return GestureDetector(
-              onTap: () => _controller.animateToPage(entry.key),
               child: Container(
                 width: 12.0,
                 height: 12.0,

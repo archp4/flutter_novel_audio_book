@@ -66,30 +66,36 @@ class _HomepageState extends State<Homepage> {
                     const SizedBox(height: 16),
                     PopularCarouselSlider(novels: homepage!.listPopularNovel),
                     const SizedBox(height: 16),
-                    DisplayNovels(
-                      title: 'Lastest Updates',
-                      novels: homepage!.listOfNovels[0],
-                    ),
-                    DisplayNovels(
-                      title: 'Completed',
-                      novels: homepage!.listOfNovels[1],
-                    ),
-                    DisplayNovels(
-                      title: 'Romance',
-                      novels: homepage!.listOfNovels[2],
-                    ),
-                    DisplayNovels(
-                      title: 'Fantasy',
-                      novels: homepage!.listOfNovels[3],
-                    ),
-                    DisplayNovels(
-                      title: 'Drama',
-                      novels: homepage!.listOfNovels[4],
-                    ),
-                    DisplayNovels(
-                      title: 'Action',
-                      novels: homepage!.listOfNovels[5],
-                    ),
+                    if (homepage!.listOfNovels[0].isNotEmpty)
+                      DisplayNovels(
+                        title: 'Lastest Updates',
+                        novels: homepage!.listOfNovels[0],
+                      ),
+                    if (homepage!.listOfNovels[1].isNotEmpty)
+                      DisplayNovels(
+                        title: 'Completed',
+                        novels: homepage!.listOfNovels[1],
+                      ),
+                    if (homepage!.listOfNovels[2].isNotEmpty)
+                      DisplayNovels(
+                        title: 'Romance',
+                        novels: homepage!.listOfNovels[2],
+                      ),
+                    if (homepage!.listOfNovels[3].isNotEmpty)
+                      DisplayNovels(
+                        title: 'Fantasy',
+                        novels: homepage!.listOfNovels[3],
+                      ),
+                    if (homepage!.listOfNovels[4].isNotEmpty)
+                      DisplayNovels(
+                        title: 'Drama',
+                        novels: homepage!.listOfNovels[4],
+                      ),
+                    if (homepage!.listOfNovels[5].isNotEmpty)
+                      DisplayNovels(
+                        title: 'Action',
+                        novels: homepage!.listOfNovels[5],
+                      ),
                     // getScrollableList(list: popularList!),
                   ],
                 ),
