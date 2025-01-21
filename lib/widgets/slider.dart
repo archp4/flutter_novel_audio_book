@@ -14,7 +14,7 @@ class PopularCarouselSlider extends StatefulWidget {
 
 class _PopularCarouselSliderState extends State<PopularCarouselSlider> {
   int _current = 0;
-  final CarouselController _controller = CarouselController();
+  final _controller = CarouselControllerImpl();
   @override
   Widget build(BuildContext context) {
     List<Widget> children = List.generate(widget.novels.length,
